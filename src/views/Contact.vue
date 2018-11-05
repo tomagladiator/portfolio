@@ -8,7 +8,7 @@
             Une opportunité d'emploi? Passez par <a href="/chatbot">mon chatBot</a> en premier pour vérifier que mon profil correspond bien à votre poste.
           </p>
 
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="thanks" class="uk-grid-small" uk-grid>
+          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="#/thanks" class="uk-grid-small" uk-grid>
             <div class="uk-width-1-2@s">
               <input type="hidden" name="form-name" value="contact" />
 
