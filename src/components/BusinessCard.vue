@@ -1,0 +1,58 @@
+<template>
+  <div class="business-card uk-margin-large-top uk-margin-large-bottom">
+    <div class="uk-card uk-card-default uk-border-rounded">
+        <div class="uk-card-header">
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto@m">
+                    <img alt="Thomas Desfossez" src="../assets/thomas-avatar.jpg" class="uk-border-circle" width="120" height="120">
+                </div>
+
+                <div class="uk-width-expand@m">
+                    <h2 class="uk-card-title uk-margin-remove-bottom">Thomas Desfossez</h2>
+                    <p class="uk-margin-remove-top uk-margin-remove-bottom">{{ msg }}</p>
+                    <p class="uk-text-meta"><span class="uk-icon " uk-icon="icon: location"></span> Neuville-Sur-Saône, 69250, FRANCE</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-card-body">
+            <p>
+                Entre le Canada et l'Europe, j'ai développé pendant 10 années une expérience professionelle dans les domaines du développement web, de la gestion de projet Agile et de l'architecture front-end.
+            </p>
+
+            <p>
+                Je reste à l'affût des nouvelles pratiques et technologies dans le domaine du web.
+            </p>
+
+            <p>
+                J'applique mes connaissances en <strong>accessibilité</strong>, en <strong>gestion de projets</strong>, en <strong>développement front-end</strong> et en <strong>design</strong> sur l'ensemble de mes projets.
+            </p>
+        </div>
+
+        <div class="uk-card-footer">
+            <h3 class="uk-card-title">Compétences</h3>
+
+            <p>
+                Tout est sur mon <a target="_blank" href="https://www.linkedin.com/in/tdesfossez" title="Linkedin"><span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: linkedin"></span></a>
+            </p>
+
+            <p>
+                 Voir aussi mon résumé de <router-link to="/expertise">compétences</router-link>
+            </p>
+        </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'BusinessCard',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<style scoped lang="scss">
+
+</style>
