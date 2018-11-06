@@ -8,7 +8,13 @@
             Une opportunité d'emploi? Passez par <a href="/chatbot">mon chatBot</a> en premier pour vérifier que mon profil correspond bien à votre poste.
           </p>
 
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="#/thanks" class="uk-grid-small" uk-grid>
+          <p>
+            Pour tout autre demande, ou pour m'envoyer vos photos de vacances, voici mon courriel : <a href="mailto:constraintsolver@gmail.com">constraintsolver@gmail.com</a>
+          </p>
+
+          <!--
+
+          <form name="contact" method="POST" netlify data-netlify-honeypot="bot-field" action="#/thanks" class="uk-grid-small" uk-grid>
             <div class="uk-width-1-2@s">
               <input type="hidden" name="form-name" value="contact" />
 
@@ -30,11 +36,17 @@
             </div>
 
             <div class="uk-width-1-1">
+              <div data-netlify-recaptcha></div>
+            </div>
+
+            <div class="uk-width-1-1">
               <button type="submit" class="uk-button uk-button-primary">
                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: bolt"> Pfiuuuuu</span>
               </button>
             </div>
           </form>
+
+          -->
       </div>
     </div>
   </div>

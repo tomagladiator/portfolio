@@ -52,7 +52,7 @@
         <!-- NAVBAR -->
         <nav class="uk-navbar-container uk-light " uk-navbar style="position: relative; z-index: 980; background: transparent">
           <div class="uk-navbar-left">
-            <router-link to="/" class="uk-navbar-item uk-logo">
+            <router-link to="/" class="uk-navbar-item uk-logo" title="retourner sur l'accueil">
               Thomas Desfossez
             </router-link>
           </div>
