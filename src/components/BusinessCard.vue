@@ -49,6 +49,12 @@ export default {
   name: 'BusinessCard',
   props: {
     msg: String
+  },
+  data () {
+    return {
+      myImage: '../assets/thomas-avatar.jpg',
+      otherImage: '../assets/thomas-desfossez-2019.jpg'
+    }
   }
 }
 </script>

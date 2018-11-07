@@ -322,3 +322,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'chatbot',
+  metaInfo: {
+    title: 'Mon expertise'
+  }
+}
+</script>

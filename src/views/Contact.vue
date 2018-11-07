@@ -51,3 +51,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'chatbot',
+  metaInfo: {
+    title: 'Me joindre'
+  }
+}
+</script>

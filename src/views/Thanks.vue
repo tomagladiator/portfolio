@@ -13,3 +13,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'thanks',
+  metaInfo: {
+    title: 'Merci!'
+  }
+}
+</script>

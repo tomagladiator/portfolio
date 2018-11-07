@@ -178,6 +178,9 @@ import MyRealisation from '@/components/MyRealisation.vue'
 
 export default {
   name: 'realisations',
+  metaInfo: {
+    title: 'Realisations'
+  },
   components: {
     MyRealisation
   }

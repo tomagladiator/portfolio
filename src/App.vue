@@ -122,7 +122,11 @@ import Icons from 'uikit/dist/js/uikit-icons'
 UIkit.use(Icons)
 
 export default {
-  name: 'App'
+  name: 'App',
+  metaInfo: {
+    title: 'Thomas Desfossez - Freelance - Lead Front-End Senior sur Lyon',
+    titleTemplate: '%s | Thomas Desfossez'
+  }
 }
 
 </script>
