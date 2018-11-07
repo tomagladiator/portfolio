@@ -1,5 +1,5 @@
 <template>
-  <div class="business-card uk-margin-large-top uk-margin-large-bottom">
+  <div class="business-card">
     <div class="uk-card uk-card-default uk-border-rounded">
         <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>

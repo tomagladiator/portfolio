@@ -1,14 +1,16 @@
 <template>
   <div>
-    <div style="position:relative" class="uk-overflow-hidden">
-      <canvas class="backgroundStar"></canvas>
-
+    <div class="uk-section uk-preserve-color uk-section-primary">
       <div class="uk-container">
         <BusinessCard msg="Lead Front-End Senior" />
       </div>
     </div>
 
-    <div class="uk-section uk-section-primary uk-preserve-color">
+    <div class="uk-section uk-preserve-color">
+      <TechBaneer />
+    </div>
+
+    <div class="uk-section uk-section-secondary uk-preserve-color">
       <div class="uk-container">
 
         <div uk-grid  style="justify-content:center">
@@ -165,11 +167,13 @@
 
 <script>
 import BusinessCard from '@/components/BusinessCard.vue'
+import TechBaneer from '@/components/TechBaneer.vue'
 
 export default {
   name: 'home',
   components: {
-    BusinessCard
+    BusinessCard,
+    TechBaneer
   }
 }
 </script>
@@ -333,16 +337,5 @@ export default {
   #hover ellipse {
     transform-origin: center center;
     animation: shadow 1.1s ease-in-out 0s infinite alternate
-  }
-
-  .backgroundStar {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
   }
 </style>

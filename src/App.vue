@@ -47,7 +47,7 @@
     </div>
 
     <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
-      <div class="uk-container uk-container-expand uk-background-secondary">
+      <div class="uk-container uk-container-expand uk-background-primary">
 
         <!-- NAVBAR -->
         <nav class="uk-navbar-container uk-light " uk-navbar style="position: relative; z-index: 980; background: transparent">
@@ -109,7 +109,7 @@
 
     <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
       <div>
-        <div class="uk-background-secondary uk-padding uk-light">Constraint Solver &copy; 2019</div>
+        <div class="uk-background-primary uk-padding uk-light">Constraint Solver &copy; 2019</div>
       </div>
     </div>
   </div>
