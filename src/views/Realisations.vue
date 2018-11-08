@@ -3,7 +3,7 @@
     <div class="realisations">
       <h1 class="uk-heading-primary uk-margin-large-top uk-margin-large-bottom">J'ai travaillé sur ces projets</h1>
 
-      <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+      <div class="uk-child-width-1-2@m uk-child-width-1-3@xl uk-grid-match" uk-grid>
         <MyRealisation
           year="2018"
           agency="Nexio"
