@@ -148,7 +148,9 @@
 
           <div class="uk-child-width-expand uk-light uk-text-center uk-text-left@m">
             <p>
-              <button class="uk-button uk-button-danger">Sommes nous compatible ?</button>
+              <router-link to="/chatbot" class="uk-button uk-button-danger">
+                Sommes nous compatible ?
+              </router-link>
             </p>
 
             <p>
