@@ -37,6 +37,10 @@
             </p>
 
             <p>
+                Vous pouvez aussi consulter mon <a href="/thomas-desfossez-cv-2019.jpg" target="_blank">CV version 2019</a>
+            </p>
+
+            <p>
                  Voir aussi mon résumé de <router-link to="/expertise">compétences</router-link>
             </p>
         </div>

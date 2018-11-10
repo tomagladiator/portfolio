@@ -5,7 +5,7 @@
           <h1>Un mot doux ?</h1>
 
           <p>
-            Une opportunité d'emploi? Passez par <a href="/chatbot">mon chatBot</a> en premier pour vérifier que mon profil correspond bien à votre poste.
+            Une opportunité d'emploi? Passez tout d'abord par <a href="/chatbot">mon chatBot</a> en premier pour vérifier que mon profil correspond bien à votre poste.
           </p>
 
           <p>

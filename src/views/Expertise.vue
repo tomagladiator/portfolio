@@ -12,10 +12,10 @@
           </h2>
 
           <p>
-            Hey, saviez-vous que la balise &lt;head&gt; n'est pas obligatoire en HTML5 ? ...non? ...Moi oui ;)
+            Hey, saviez-vous que la balise &lt;head&gt; n'est pas obligatoire en HTML5 ? ...non? ...Moi oui ;).
           </p>
 
-          <progress class="uk-progress" value="95" max="100">
+          <progress id="js-progressbar" class="uk-progress" value="10" max="100">
             95%
           </progress>
 
@@ -26,7 +26,7 @@
           </h2>
 
           <p>
-            J'ai animé une formation sur le SCSS avec le MeetUp HTML5Mtl
+            J'ai animé une formation sur le SCSS avec le MeetUp HTML5Mtl.
           </p>
 
           <progress class="uk-progress" value="90" max="100">
@@ -40,7 +40,7 @@
           </h2>
 
           <p>
-            Aussi loin que je me souvienne, j'ai débuté avec jQuery et j'utilise encore jQuery
+            Aussi loin que je me souvienne, j'ai débuté avec jQuery.
           </p>
 
           <progress class="uk-progress" value="70" max="100">
@@ -54,7 +54,7 @@
           </h2>
 
           <p>
-            C'est un vrai plaisir de coder en ES6 guidé par ESLINT avec des arrow function et sans les points virgules <br /> Toutefois, l'utilisation massive de jQuery m'a dérouté de mon apprentissage de javaScript
+            C'est un vrai plaisir de coder en ES6 guidé par ESLINT avec des arrow function et sans les points virgules. <br /> Toutefois, l'utilisation massive de jQuery m'a dérouté de mon apprentissage de javaScript.
           </p>
 
           <progress class="uk-progress" value="50" max="100">
@@ -68,7 +68,7 @@
           </h2>
 
           <p>
-            l'Accessibilité ce n'est pas juste des balises "aria", c'est aussi la sensibilité de se mettre dans la peau d'une personne handicapée
+            L'accessibilité ce n'est pas juste des balises "aria", c'est aussi la sensibilité de se mettre dans la peau d'une personne porteuse d'un handicap.
           </p>
 
           <progress class="uk-progress" value="95" max="100">
@@ -83,9 +83,9 @@
 
           <p>
             J'ai eu une formation de la Angular Academy, toutefois, je pense avoir été traumatisé par ce framework...
-            <br /> C'est pourquoi je porte dans mon coeur VueJs et je me forme en ce moment à React
-            <br /> Pour info, mon portfolio est en React et la web app de ma conjointe,
-            <a target="_blank" rel="noopener noreferrer" href="https://www.dyscatalog.com/"> Dyscatalog </a> en Vue
+            <br /> C'est pourquoi je porte dans mon coeur VueJs et je me forme en ce moment à React.
+            <br /> Pour info, mon portfolio est en Vue et la web app de ma conjointe,
+            <a target="_blank" rel="noopener noreferrer" href="https://www.dyscatalog.com/"> Dyscatalog </a> également.
           </p>
 
           <progress class="uk-progress" value="50" max="100">
@@ -99,7 +99,7 @@
           </h2>
 
           <p>
-            C'est une belle découverte pour moi, et je dois encore comprendre certains mystère sur la gestion des caches, mais le fait de pouvoir faire des Notifications en Push est vraiment hot!
+            C'est une belle découverte pour moi, et je dois encore comprendre certains mystères sur la gestion des caches, mais le fait de pouvoir faire des Notifications en Push est vraiment hot!
           </p>
 
           <progress class="uk-progress" value="60" max="100">
@@ -113,7 +113,7 @@
           </h2>
 
           <p>
-            Je sais comment optimiser un SVG dans illustrator (Pathfinder...)
+            Je sais comment optimiser un SVG dans illustrator (Pathfinder...).
             <br /> Je suis très à l'aise avec Photoshop aussi.
           </p>
 
@@ -128,7 +128,7 @@
           </h2>
 
           <p>
-            Ma plus grande fierté: transformer un fichier CSS de 2Go à 200Ko
+            Ma plus grande fierté: transformer un fichier CSS de 2Go à 200Ko.
           </p>
 
           <progress class="uk-progress" value="70" max="100">
@@ -138,11 +138,11 @@
           <hr />
 
           <h2>
-            CMS, Liferay, Drupal, Wordpress, Joomla, Sitecore, Orchard
+            CMS, Liferay, Drupal, Wordpress, Joomla, Sitecore, Orchard...
           </h2>
 
           <p>
-            Bon, après le 5 <sup>e</sup> CMS, on finit par tous les connaître
+            Bon, après le 5 <sup>e</sup> CMS, on finit par tous les connaître.
           </p>
 
           <progress class="uk-progress" value="80" max="100">
@@ -156,7 +156,7 @@
           </h2>
 
           <p>
-            J'ai suivi plusieurs formations / conférences d'agilité et j'aime les débats interminables sur la définition d'un daily Scrum
+            J'ai suivi plusieurs formations / conférences d'agilité et j'aime les débats interminables sur la définition d'un daily Scrum.
           </p>
 
           <progress class="uk-progress" value="80" max="100">
@@ -170,8 +170,8 @@
           </h2>
 
           <p>
-            Tant qu'on me donne le workflow pour le projet, je l'appliquerai à la lettre
-            <br /> Evidemment, j'utilise GIT aussi pour mes projets perso
+            Du moment qu'on me donne le workflow pour le projet, je l'appliquerai à la lettre.
+            <br /> Évidemment, j'utilise GIT aussi pour mes projets personnels.
           </p>
 
           <progress class="uk-progress" value="65" max="100">
@@ -186,7 +186,7 @@
 
           <p>
             J'adore monter les tâches automatisées avec Gulp, c'est récréatif!
-            <br /> Je me tatonne toujours à faire le virage vers Webpack...
+            <br /> Je me tâtonne toujours à faire le virage vers Webpack...
           </p>
 
           <progress class="uk-progress" value="85" max="100">
@@ -201,7 +201,7 @@
 
           <p>
             Faire des formations, partager mes connaissances, maintenir la flamme de l'apprentissage....
-            <br /> Evaluer/estimer les récits, dispatcher les tâches en fonction des ressources...
+            <br /> Evaluer/estimer les récits, distribuer les tâches en fonction des ressources...
             <br /> Mais surtout, avoir de l'empathie!
           </p>
 
@@ -216,8 +216,8 @@
           </h2>
 
           <p>
-            Mon anglais technique est très bon, la compréhension et la lecture surtout
-            <br /> Mon écrit et mon parlé manque un peu d'assurance toutefois
+            Mon anglais technique est très bon, la compréhension et la lecture surtout.
+            <br /> Mon écrit et mon parlé manquent un peu d'assurance toutefois.
           </p>
 
           <progress class="uk-progress" value="70" max="100">
