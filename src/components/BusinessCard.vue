@@ -1,6 +1,6 @@
 <template>
   <div class="business-card">
-    <div class="uk-card uk-card-default uk-border-rounded">
+    <div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-large">
         <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto@m">

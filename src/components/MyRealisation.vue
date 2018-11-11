@@ -2,7 +2,8 @@
   <div class="my-realisation uk-margin-medium-bottom">
     <div class="uk-card uk-card-default">
         <div class="uk-card-media-top uk-overflow-hidden">
-            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover th-img" :data-src="imgUrl" uk-img>
+            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover th-img uk-animation-kenburns" :data-src="imgUrl" uk-img>
+
             </div>
         </div>
 
@@ -60,15 +61,10 @@ export default {
 <style scoped lang="scss">
     .th-img {
         transition: all 0.4s cubic-bezier(0.3,1.08,1,1);
-        opacity: 0.8;
-        //filter: brightness(0.7) blur(4px) saturate(0.2);
-        transform: scale(1.1);
         background-position: top;
     }
 
     .uk-card:hover .th-img {
-        opacity: 1;
-        //filter: brightness(1) blur(0px) saturate(1);
-        transform: scale(1);
+       background-position: top;
     }
 </style>

@@ -18,7 +18,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="uk-card-body">
                             <p>
                                 Après avoir travaillé plusieurs années avec Thomas, je peux assurer qu'il est un développeur Front-end hors pair.
@@ -35,7 +35,7 @@
                             <p>
                                 Avoir Thomas au sein de son entreprise est un plus. Il est tout simplement un atout.
                             </p>
-                        </div> 
+                        </div>
                     </div>
                 </li>
                 <li>

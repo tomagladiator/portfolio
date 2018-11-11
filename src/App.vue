@@ -2,28 +2,28 @@
   <div id="app">
     <div id="toggle-menu" uk-offcanvas="overlay: true; flip: true; mode: push">
       <div class="uk-offcanvas-bar">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <button class="uk-offcanvas-close" type="button" uk-close ref="closeButton"></button>
 
          <ul class="uk-nav uk-nav-default">
-            <li class="uk-margin-small-bottom">
-              <router-link to="/"  uk-toggle="target: #toggle-menu">
+            <li class="uk-margin-small-bottom"  v-on:click="triggerClose">
+              <router-link to="/">
                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: home" ></span> Accueil
               </router-link>
             </li>
 
-            <li class="uk-margin-small-bottom">
+            <li class="uk-margin-small-bottom"  v-on:click="triggerClose">
               <router-link to="/realisations">
                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: check"></span> Mes réalisations
               </router-link>
             </li>
 
-            <li class="uk-margin-small-bottom">
+            <li class="uk-margin-small-bottom"  v-on:click="triggerClose">
               <router-link to="/chatbot">
                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: comments"></span> Une mission&nbsp;?
               </router-link>
             </li>
 
-            <li class="uk-margin-small-bottom">
+            <li class="uk-margin-small-bottom"  v-on:click="triggerClose">
               <router-link to="/contact">
                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: mail"></span> Contact
               </router-link>
@@ -31,14 +31,14 @@
 
             <li class="uk-nav-divider uk-margin-small-bottom"></li>
 
-            <li class="uk-margin-small-bottom">
+            <li class="uk-margin-small-bottom"  v-on:click="triggerClose">
               <a href="https://www.linkedin.com/in/tdesfossez" target="_blank" title="Linkedin">
                 <span class="uk-margin-small-right uk-icon-button" uk-icon="icon: linkedin" style="fill: white"></span> Linkedin
               </a>
             </li>
 
             <li>
-              <a href="https://github.com/tomagladiator" target="_blank" title="Github">
+              <a href="https://github.com/tomagladiator" target="_blank" title="Github"  v-on:click="triggerClose">
                 <span class="uk-margin-small-right uk-icon-button" uk-icon="icon: github" style="fill: white"></span> Github
               </a>
             </li>
@@ -126,6 +126,11 @@ export default {
   metaInfo: {
     title: 'Thomas Desfossez - Freelance - Lead Front-End Senior sur Lyon',
     titleTemplate: '%s | Thomas Desfossez'
+  },
+  methods: {
+    triggerClose () {
+      this.$refs.closeButton.click()
+    }
   }
 }
 
