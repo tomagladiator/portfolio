@@ -17,7 +17,7 @@
 
         <div class="uk-card-body">
             <p>
-                Entre le Canada et l'Europe, j'ai développé pendant 10 années une expérience professionelle dans les domaines du développement web, de la gestion de projet Agile et de l'architecture front-end.
+                Entre le Canada et l'Europe, j'ai développé pendant 10 années une expérience professionnelle dans les domaines du développement web, de la gestion de projet Agile et de l'architecture front-end.
             </p>
 
             <p>
