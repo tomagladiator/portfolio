@@ -41,7 +41,7 @@
             </p>
 
             <p>
-                 Voir aussi mon résumé de <router-link to="/expertise">compétences</router-link>
+                 Voir aussi mon résumé de <router-link to="/expertise">compétences !</router-link>
             </p>
         </div>
     </div>
