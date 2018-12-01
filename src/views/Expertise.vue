@@ -15,7 +15,7 @@
             Hey, saviez-vous que la balise &lt;head&gt; n'est pas obligatoire en HTML5 ? ...non? ...Moi oui ;).
           </p>
 
-          <progress id="js-progressbar" class="uk-progress" value="10" max="100">
+          <progress id="js-progressbar" class="uk-progress" value="95" max="100">
             95%
           </progress>
 
@@ -40,25 +40,25 @@
           </h2>
 
           <p>
-            Aussi loin que je me souvienne, j'ai débuté avec jQuery.
+            Aussi loin que je me souvienne, j'ai débuté avec jQuery, toutefois me voila familiarisé avec javaScript ES6.
           </p>
 
-          <progress class="uk-progress" value="70" max="100">
-            70%
+          <progress class="uk-progress" value="80" max="100">
+            80%
           </progress>
 
           <hr />
 
           <h2>
-            javaScript / ECMAScript 6
+            javaScript / ECMAScript 6/7...
           </h2>
 
           <p>
-            C'est un vrai plaisir de coder en ES6 guidé par ESLINT avec des arrow function et sans les points virgules. <br /> Toutefois, l'utilisation massive de jQuery m'a dérouté de mon apprentissage de javaScript.
+            C'est un vrai plaisir de coder en ES6 guidé par ESLINT avec des arrow function et sans les points virgules.
           </p>
 
-          <progress class="uk-progress" value="50" max="100">
-            50%
+          <progress class="uk-progress" value="70" max="100">
+            70%
           </progress>
 
           <hr />
@@ -181,12 +181,12 @@
           <hr />
 
           <h2>
-            Gulp
+            Gulp / Webpack
           </h2>
 
           <p>
             J'adore monter les tâches automatisées avec Gulp, c'est récréatif!
-            <br /> Je me tâtonne toujours à faire le virage vers Webpack...
+            <br /> Webpack est moins intuitif pour moi, mais j'y suis familier.
           </p>
 
           <progress class="uk-progress" value="85" max="100">
@@ -263,8 +263,22 @@
           <hr />
 
           <h2>
-            Mes formations
+            Mes formations et Certifications
           </h2>
+
+          <p>
+            <b>
+              2018
+            </b>
+
+            <br />
+
+            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Formation Développement Moderne javascript et ES6, ES7
+
+            <br />
+
+            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Formation javascript débarque dans votre naviguateur
+          </p>
 
           <p>
             <b>
@@ -273,7 +287,7 @@
 
             <br />
 
-            Formation Angular Academy
+            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Formation Angular Academy
           </p>
 
           <p>
@@ -283,7 +297,7 @@
 
             <br />
 
-            Formation Accessibilité
+            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Formation Accessibilité
           </p>
 
           <p>
@@ -293,7 +307,7 @@
 
             <br />
 
-            Haute École Albert jacquard - Namur - Belgique
+            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Haute École Albert jacquard - Namur - Belgique
           </p>
 
           <p>
@@ -303,7 +317,7 @@
 
             <br />
 
-            Bac en Art appliqué avec mention et distinction du Jury
+            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Bac en Art appliqué avec mention et distinction du Jury
           </p>
 
           <hr />
@@ -312,6 +326,7 @@
             Reconnaissances
           </h2>
 
+          <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Prix Boomerang pour fondsftq.com/fr-ca/particuliers <br>
           <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Prix Boomerang pour corpo.metro.ca <br>
           <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Prix Boomerang pour App St-Hubert <br>
           <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Prix Boomerang pour Desjardins Monetico <br>
