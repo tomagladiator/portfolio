@@ -4,7 +4,7 @@
         <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto@m">
-                    <img alt="Thomas Desfossez" src="../assets/thomas-avatar.jpg" class="uk-border-circle" width="120" height="120">
+                    <img alt="Thomas Desfossez" src="../assets/thomas-desfossez-2019.jpg" class="uk-border-circle" width="160" height="160">
                 </div>
 
                 <div class="uk-width-expand@m">
@@ -21,11 +21,20 @@
             </p>
 
             <p>
-                Je reste à l'affût des nouvelles pratiques et technologies dans le domaine du web.
+                Je reste à l'affût des nouvelles pratiques et technologies dans le domaine du web. <br>
+                J'applique mes connaissances en <strong>accessibilité</strong>, en <strong>gestion de projets</strong>, en <strong>développement front-end</strong> et en <strong>design</strong> sur l'ensemble de mes projets.
             </p>
 
-            <p>
-                J'applique mes connaissances en <strong>accessibilité</strong>, en <strong>gestion de projets</strong>, en <strong>développement front-end</strong> et en <strong>design</strong> sur l'ensemble de mes projets.
+            <hr class="uk-divider-icon">
+
+            <p class="uk-text-center">
+                Je suis disponible pour une mission de 4 jours / semaine, mercredi off (papa garde les filles). <br>
+                En télétravail avec possibilité si besoin de déplacement 1 jour semaine ( Proche de Lyon ). <br>
+                Mon taux journalier est de 600€ HT
+            </p>
+
+            <p class="uk-text-center">
+                Prenons le temps d’échanger autour d’un café/thé. :-)
             </p>
         </div>
 

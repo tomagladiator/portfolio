@@ -2,7 +2,7 @@
   <div>
     <div class="uk-section uk-preserve-color uk-section-primary">
       <div class="uk-container">
-        <BusinessCard msg="Lead Front-End Senior - Freelance" />
+        <BusinessCard msg="Senior Front-End Web Developer - Freelance" />
       </div>
     </div>
 
