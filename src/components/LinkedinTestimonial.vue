@@ -108,26 +108,6 @@
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-header">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <div class="uk-width-auto@m">
-                                    <img alt="Thomas Desfossez" src="img/testimonials/gregory-delrue.jpg" class="uk-border-circle" width="120" height="120">
-                                </div>
-
-                                <div class="uk-width-expand@m">
-                                    <h2 class="uk-card-title uk-margin-remove-bottom">Grégory Delrue</h2>
-                                    <p class="uk-margin-remove-top uk-margin-remove-bottom">Directeur Principal Head Hunter chez Évolution Recrutement Inc</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="uk-card-body">
-                            <p>Thomas est très efficace dans son travail. Il a su m’écouter et faire preuve de débrouillardise pour m’apporter rapidement les solutions dont j’avais besoin. Il est performant, disponible et fait passer ses clients à la première place. Il est axé sur les résultats tout en fournissant un excellent service. Je le recommande sans hésiter.</p>
-                        </div>
-                    </div>
-                </li>
             </ul>
 
             <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>

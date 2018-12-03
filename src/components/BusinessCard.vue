@@ -27,15 +27,21 @@
 
             <hr class="uk-divider-icon">
 
-            <p class="uk-text-center">
-                Je suis disponible pour une mission de 4 jours / semaine, mercredi off (papa garde les filles). <br>
-                En télétravail avec possibilité si besoin de déplacement 1 jour semaine ( Proche de Lyon ). <br>
-                Mon taux journalier est de 600€ HT
-            </p>
+            <blockquote cite="#" class="uk-text-center">
+                <p >
+                    <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
+                    Me voilà disponible pour une mission de 4 jours / semaine, mercredi off (papa garde les filles). <br>
+                    En télétravail avec possibilité si besoin de déplacement 1 jour semaine ( Proche de Lyon ). <br>
+                    Mon taux journalier est de 600€ HT
+                </p>
 
-            <p class="uk-text-center">
-                Prenons le temps d’échanger autour d’un café/thé. :-)
-            </p>
+                <footer>
+                    <cite>
+                        Prenons le temps d’échanger autour d’un café/thé. <span style="font-style: normal;">☕</span>
+                        <span class="uk-icon uk-margin-small-left uk-icon-button" uk-icon="icon: quote-right; ratio: 2"></span
+                    ></cite>
+                </footer>
+            </blockquote>
         </div>
 
         <div class="uk-card-footer">
