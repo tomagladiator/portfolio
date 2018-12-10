@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/tomagladiator
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://thomas-desfossez.com
+  * I am tomagladiator (https://keybase.io/tomagladiator) on keybase.
+  * I have a public key ASDHeCD1BrWNdpOxusK16wHQv7iO4ee88BWXm3FqZ8YC8go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120c77820f506b58d7693b1bac2b5eb01d0bfb88ee1e7bcf015979b716a67c602f20a",
+      "host": "keybase.io",
+      "kid": "0120c77820f506b58d7693b1bac2b5eb01d0bfb88ee1e7bcf015979b716a67c602f20a",
+      "uid": "7190b90b0a84469bcf8002ba69efd319",
+      "username": "tomagladiator"
+    },
+    "merkle_root": {
+      "ctime": 1544436582,
+      "hash": "6ec5bc54acd2fc812af331d630812cfaaa25db506627965e8aa3ef82951d9fd07c138376b51413466d2009e008393f527d2f3cc12b89c91fcce7667b7b1dbbc3",
+      "hash_meta": "8682fe1f77d129e4daec1f1022ee6da73a76ad87acf2901f4353b9e223b82cae",
+      "seqno": 4084039
+    },
+    "service": {
+      "entropy": "D2jKnjST/PaRrr3LaTT5upNV",
+      "hostname": "thomas-desfossez.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.11.0"
+  },
+  "ctime": 1544436794,
+  "expire_in": 504576000,
+  "prev": "b079713f4c307ded7793c37a4a5cb2fd463b986d2b06ba3fd0368bbefad5079c",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgx3gg9Qa1jXaTsbrCtesB0L+4juHnvPAVl5txamfGAvIKp3BheWxvYWTESpcCBcQgsHlxP0wwfe13k8N6Slyy/UY7mG0rBro/0DaLvvrVB5zEIFIQx2DcNP176JzER73IsVyGjkwoIc+5fZxY7nRkG2zIAgHCo3NpZ8RAl7J68OPhieRYa3AAsMzAdDXDeBksV8j3VCybF9VeUSIerJz8HmcVhXesI1vSfZP6hin+L2qPlPW+32qvToO9BKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPleJ2EwCYwH/RRRA6V/tbTRt8dgIBWwrCjdTKhL/L6Jo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tomagladiator
+
+==================================================================
