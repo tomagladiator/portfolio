@@ -4,7 +4,7 @@
       <div class="uk-child-width-expand@s uk-grid-divider" uk-grid>
         <div>
           <h1 class="uk-heading-primary">
-            Mes compétences 2018
+            Mes compétences 2019
           </h1>
 
           <Expertise v-for=" (exp, i) in expertisesFiltered " :key="i"

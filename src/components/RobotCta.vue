@@ -2,8 +2,8 @@
   <div class="uk-section uk-section-secondary uk-preserve-color">
       <div class="uk-container">
 
-        <div uk-grid  style="justify-content:center">
-          <div class="uk-child-width-expand">
+        <div uk-grid  style="justify-content:center" class="uk-child-width-1-2@m uk-grid">
+          <div class="">
             <div class="robot">
 
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
@@ -135,7 +135,7 @@
             </div>
           </div>
 
-          <div class="uk-child-width-expand uk-light uk-text-center uk-text-left@m">
+          <div class="uk-light uk-text-center uk-text-left@m">
             <p>
               <router-link to="/chatbot" class="uk-button uk-button-danger">
                 Sommes-nous compatibles ?
@@ -143,11 +143,11 @@
             </p>
 
             <p>
-              BIP BOOP ... HUMAIN ... VENEZ DISCUTER DE VOTRE MISSION AVEC MOI ...
+              <vue-typer text='BIP BOOP ... HUMAIN ... VENEZ DISCUTER DE VOTRE MISSION AVEC MOI ...' :repeat='0' />
             </p>
 
             <p>
-              BOOP
+              <vue-typer :text='bipBoop' :erase-on-complete='true' erase-style='select-back' @erased='onErased'/>
             </p>
           </div>
         </div>
@@ -156,8 +156,34 @@
 </template>
 
 <script>
+import { VueTyper } from 'vue-typer'
 
+export default {
+  components: {
+    VueTyper
+  },
+
+  data () {
+    return {
+      bipBoop: 'BOOP'
+    }
+  },
+
+  methods: {
+    onErased () {
+      this.bipBoop === 'BOOP' ? this.bipBoop = 'BIP' : this.bipBoop = 'BOOP'
+    }
+  }
+}
 </script>
+
+<style lang="scss">
+.vue-typer {
+  .typed {
+    color: rgba(255, 255, 255, 0.7)
+  }
+}
+</style>
 
 <style scoped>
 .robot svg {

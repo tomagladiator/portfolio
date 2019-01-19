@@ -6,7 +6,7 @@
 
         <p v-html="text"></p>
 
-        <progress class="uk-progress" :value="progression" max="100">
+        <progress class="uk-progress" :class="injectedClass" :value="progression" max="100">
             {{ progression }}%
         </progress>
 
@@ -20,7 +20,11 @@ export default {
 
   data () {
     return {
-      progression: 0
+      progression: 0,
+
+      injectedClass: 'uk-animation-scale-up',
+
+      time: 0
     }
   },
 
@@ -43,13 +47,17 @@ export default {
 
   methods: {
     progressAnimate () {
+      let time = Math.floor(Math.random() * (200 - 100) + 100)
+
+      this.time = time
+
       const progressionInterval = setInterval(() => {
         this.progression += 5
 
         if (this.progression >= this.progress) {
           clearInterval(progressionInterval)
         }
-      }, Math.random() * (200 - 150) + 150)
+      }, time) // random between 1s and 500ms
     }
   },
 
@@ -58,3 +66,6 @@ export default {
   }
 }
 </script>
+
+<style lang="css" scoped>
+</style>

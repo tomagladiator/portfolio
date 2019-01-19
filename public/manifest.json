@@ -1,6 +1,6 @@
 {
-  "name": "mon-appy",
-  "short_name": "mon-appy",
+  "name": "Thomas Desfossez",
+  "short_name": "Thomas Desfossez",
   "icons": [
     {
       "src": "/img/icons/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
   ],
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#08acb4",
-  "theme_color": "#4DBA87"
+  "background_color": "#1e87f0",
+  "theme_color": "#1e87f0"
 }

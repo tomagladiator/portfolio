@@ -1,5 +1,5 @@
 <template>
-  <div class="business-card">
+  <div class="business-card uk-animation-slide-bottom-small">
     <div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-large">
         <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
