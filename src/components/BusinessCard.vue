@@ -66,9 +66,11 @@
 <script>
 export default {
   name: 'BusinessCard',
+
   props: {
     msg: String
   },
+
   data () {
     return {
       myImage: '../assets/thomas-avatar.jpg',
