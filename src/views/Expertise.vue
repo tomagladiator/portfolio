@@ -78,18 +78,47 @@
           <hr />
 
           <h2>
-            React / Vue / Angular
+            Vue
           </h2>
 
           <p>
-            J'ai eu une formation de la Angular Academy, toutefois, je pense avoir été traumatisé par ce framework...
-            <br /> C'est pourquoi je porte dans mon coeur VueJs et je me forme en ce moment à React.
+            J'ai récemment terminé une mission en Vue pour un client, c'est un framework que j'adore ♥
             <br /> Pour info, mon portfolio est en Vue et la web app de ma conjointe,
             <a target="_blank" rel="noopener noreferrer" href="https://www.dyscatalog.com/"> Dyscatalog </a> également.
           </p>
 
+          <progress class="uk-progress" value="80" max="100">
+            80%
+          </progress>
+
+          <hr />
+
+          <h2>
+            React
+          </h2>
+
+          <p>
+            J'ai réalisé plusieurs projets perso en React avec diverses librairies dont le générateur de site: Gatsby <br>
+            Je n'ai rien contre React, c'est juste que mes neurones sont pour le moment réservés à Vue.
+          </p>
+
           <progress class="uk-progress" value="50" max="100">
             50%
+          </progress>
+
+          <hr />
+
+          <h2>
+            Angular
+          </h2>
+
+          <p>
+            J'ai eu une formation de la Angular Academy, toutefois, je pense avoir été traumatisé par ce framework...
+            <br /> C'est pourquoi je porte dans mon coeur Vue.
+          </p>
+
+          <progress class="uk-progress" value="25" max="100">
+            25%
           </progress>
 
           <hr />
@@ -166,7 +195,7 @@
           <hr />
 
           <h2>
-            GIT
+            GIT / GitLab
           </h2>
 
           <p>
@@ -232,7 +261,7 @@
 
           <p>
             <b>2018 - aujourd'hui</b> <br />
-            Freelance
+            Freelance - Développeur Frontend Senior
           </p>
 
           <p>
