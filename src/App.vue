@@ -109,7 +109,7 @@
 
     <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
       <div>
-        <div class="uk-background-primary uk-padding uk-light">Constraint Solver &copy; 2019</div>
+        <div class="uk-background-primary uk-padding uk-light">Thomas Desfossez &copy; 2019</div>
       </div>
     </div>
   </div>

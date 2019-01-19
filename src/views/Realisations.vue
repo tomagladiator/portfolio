@@ -1,7 +1,11 @@
 <template>
   <div class="uk-container uk-container-expand">
     <div class="realisations">
-      <h1 class="uk-heading-primary uk-margin-large-top uk-margin-large-bottom">J'ai travaillé sur ces projets</h1>
+      <h1 class="uk-heading-primary uk-margin-large-top">J'ai travaillé sur ces projets</h1>
+
+      <p class="uk-margin-large-bottom">
+        Jetez aussi un oeil à mes <router-link to="/expertise">compétences !</router-link>
+      </p>
 
       <div class="uk-child-width-1-2@m uk-child-width-1-3@xl uk-grid-match" uk-grid="parallax: 450">
         <MyRealisation

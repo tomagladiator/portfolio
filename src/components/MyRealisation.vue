@@ -2,7 +2,7 @@
   <div class="my-realisation uk-margin-medium-bottom">
     <div class="uk-card uk-card-default">
         <div class="uk-card-media-top uk-overflow-hidden">
-            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover th-img uk-animation-kenburns" :data-src="imgUrl" uk-img>
+            <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover th-img" :class="injectedClass" :data-src="imgUrl" uk-img>
 
             </div>
         </div>
@@ -44,6 +44,13 @@
 <script>
 export default {
   name: 'BusinessCard',
+
+  data () {
+    return {
+      injectedClass: ''
+    }
+  },
+
   props: {
     year: String,
     project: String,
@@ -54,6 +61,12 @@ export default {
     agency: String,
     titleJob: String,
     hashtag: String
+  },
+
+  created () {
+    setTimeout(() => {
+      this.injectedClass = 'uk-animation-kenburns'
+    }, Math.random() * (1000 - 150) + 150)
   }
 }
 </script>
