@@ -7,7 +7,9 @@
             Mes compétences 2019
           </h1>
 
-          <Expertise v-for=" (exp, i) in expertisesFiltered " :key="i"
+          <Expertise
+            v-for     =" (exp, i) in expertisesFiltered"
+            :key      ="i"
             :title    ="exp.title"
             :text     ="exp.text"
             :progress ="exp.progress"
@@ -27,35 +29,12 @@
             Mes expériences professionnelles
           </h2>
 
-          <p>
-            <b>2018 - aujourd'hui</b> <br />
-            Freelance - Développeur Frontend Senior
-          </p>
-
-          <p>
-            <b>2017 - 2018</b> <br />
-            Agence Nexio - Team Lead front-end
-          </p>
-
-          <p>
-            <b>2013 -2017</b> <br />
-            Agence Tink - Développeur Frontend Senior
-          </p>
-
-          <p>
-            <b>2012 -2013</b> <br />
-            Agence Altimax - Chargé de projet web
-          </p>
-
-          <p>
-            <b>2009 -2012</b> <br />
-            Agence Cidma - Designer / Intégrateur
-          </p>
-
-          <p>
-            <b>2008 -2009</b> <br />
-            Constraintsolver - Animateur 3D / Web
-          </p>
+          <Experience
+            v-for =" (exp, i) in experiences"
+            :key  ="i"
+            :date  ="exp.date"
+            :title ="exp.title"
+          />
 
           <hr />
 
@@ -63,59 +42,11 @@
             Mes formations et Certifications
           </h2>
 
-          <p>
-            <b>
-              2018
-            </b>
-
-            <br />
-
-            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Formation Développement Moderne javascript et ES6, ES7
-
-            <br />
-
-            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Formation javascript débarque dans votre naviguateur
-          </p>
-
-          <p>
-            <b>
-              2015
-            </b>
-
-            <br />
-
-            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Formation Angular Academy
-          </p>
-
-          <p>
-            <b>
-              2013
-            </b>
-
-            <br />
-
-            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Formation Accessibilité
-          </p>
-
-          <p>
-            <b>
-              2006 - 2009
-            </b>
-
-            <br />
-
-            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Haute École Albert jacquard - Namur - Belgique
-          </p>
-
-          <p>
-            <b>
-              2006
-            </b>
-
-            <br />
-
-            <span class="uk-icon uk-margin-small-right" uk-icon="icon: bookmark"></span>Bac en Art appliqué avec mention et distinction du Jury
-          </p>
+          <Formation
+            v-for =" (form, i) in formations"
+            :key  ="i"
+            :data ="form"
+          />
 
           <hr />
 
@@ -123,12 +54,11 @@
             Reconnaissances
           </h2>
 
-          <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Prix Boomerang pour fondsftq.com/fr-ca/particuliers <br>
-          <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Prix Boomerang pour corpo.metro.ca <br>
-          <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Prix Boomerang pour App St-Hubert <br>
-          <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Prix Boomerang pour Desjardins Monetico <br>
-          <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Grand prix Boomerang pour AMT <br>
-          <span class="uk-icon uk-margin-small-right" uk-icon="icon: star"></span>Élu Président de l'organisme W3Québec
+          <Recognition
+            v-for =" (reco, i) in recognitions"
+            :key  ="i"
+            :text ="reco"
+          />
         </div>
       </div>
     </div>
@@ -137,12 +67,18 @@
 
 <script>
 import Expertise from '../components/Expertise'
+import Experience from '../components/Experience'
+import Formation from '../components/Formation'
+import Recognition from '../components/Recognition'
 
 export default {
   name: 'chatbot',
 
   components: {
-    Expertise
+    Expertise,
+    Experience,
+    Formation,
+    Recognition
   },
 
   computed: {
@@ -160,6 +96,82 @@ export default {
   data () {
     return {
       inputSearch: '',
+
+      recognitions: [
+        `Prix Boomerang pour fondsftq.com/fr-ca/particuliers`,
+        `Prix Boomerang pour corpo.metro.ca`,
+        `Prix Boomerang pour App St-Hubert`,
+        `Prix Boomerang pour Desjardins Monetico`,
+        `Grand prix Boomerang pour AMT`,
+        `Élu Président de l'organisme W3Québec`
+      ],
+
+      formations: [
+        {
+          year: `2018`,
+          items: [
+            `Formation Développement Moderne javascript et ES6, ES7`,
+            `Formation javascript débarque dans votre naviguateur`
+          ]
+        },
+        {
+          year: `2017`,
+          items: [
+            `Sitecore® Web Experience Management eLearning`
+          ]
+        },
+        {
+          year: `2015`,
+          items: [
+            `Formation Angular Academy`
+          ]
+        },
+        {
+          year: `2013`,
+          items: [
+            `Formation Accessibilité`
+          ]
+        },
+        {
+          year: `2006 - 2009`,
+          items: [
+            `Haute École Albert jacquard - Namur - Belgique`
+          ]
+        },
+        {
+          year: `2006`,
+          items: [
+            `Bac en Art appliqué avec mention et distinction du Jury`
+          ]
+        }
+      ],
+
+      experiences: [
+        {
+          date: `2018 - aujourd'hui`,
+          title: `Freelance - Développeur Frontend Senior`
+        },
+        {
+          date: `2017 - 2018`,
+          title: `Agence Nexio - Team Lead front-end`
+        },
+        {
+          date: `2013 - 2017`,
+          title: `Agence Tink - Développeur Frontend Senior`
+        },
+        {
+          date: `2012 - 2013`,
+          title: `Agence Altimax - Chargé de projet web`
+        },
+        {
+          date: `2009 - 2012`,
+          title: `Agence Cidma - Designer / Intégrateur`
+        },
+        {
+          date: `2008 - 2009`,
+          title: `Constraintsolver - Animateur 3D / Web`
+        }
+      ],
 
       expertises: [
         {

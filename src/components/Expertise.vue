@@ -6,7 +6,7 @@
 
         <p v-html="text"></p>
 
-        <progress class="uk-progress" :class="injectedClass" :value="progression" max="100">
+        <progress class="uk-progress" :class="injectedClass" :value="progression" max="100" >
             {{ progression }}%
         </progress>
 
@@ -67,5 +67,14 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>

@@ -28,10 +28,10 @@
             <hr class="uk-divider-icon">
 
             <blockquote cite="#" class="uk-text-center">
-                <p >
+                <p style="line-height: 3rem;">
                     <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
                     Me voilà disponible pour une mission de 4 jours / semaine, mercredi off (papa garde les filles). <br>
-                    En télétravail avec possibilité si besoin de déplacement 1 jour semaine ( Proche de Lyon ). <br>
+                    En <router-link to="/remote">télétravail</router-link> avec possibilité si besoin de déplacement 1 jour semaine ( Proche de Lyon ). <br>
                     Mon taux journalier est de 600€ HT
                 </p>
 
@@ -47,17 +47,25 @@
         <div class="uk-card-footer">
             <h3 class="uk-card-title">Compétences</h3>
 
+            <div uk-grid>
+
             <p>
-                Tout est sur mon <a target="_blank" href="https://www.linkedin.com/in/tdesfossez" title="Linkedin"><span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: linkedin"></span></a>
+                Tout est sur mon <a target="_blank" href="https://www.linkedin.com/in/tdesfossez" title="Linkedin">Linkedin</a>
             </p>
 
             <p>
-                Vous pouvez aussi consulter mon <a href="/thomas-desfossez-cv-2019.jpg" target="_blank">CV version 2019</a>
+                Voici mon résumé de <router-link to="/expertise">compétences !</router-link>
             </p>
 
             <p>
-                 Voir aussi mon résumé de <router-link to="/expertise">compétences !</router-link>
+                Jetez un oeil sur mes <router-link to="/realisations">réalisations !</router-link>
             </p>
+
+            <p>
+                oldSchool? mon <a href="/thomas-desfossez-cv-2019.jpg" target="_blank">CV version 2019</a>
+            </p>
+
+            </div>
         </div>
     </div>
   </div>

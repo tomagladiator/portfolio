@@ -43,6 +43,11 @@ export default new Router({
       path: '/expertise',
       name: 'expertise',
       component: () => import('./views/Expertise.vue')
+    },
+    {
+      path: '/remote',
+      name: 'remote',
+      component: () => import('./views/Remote.vue')
     }
   ]
 })
