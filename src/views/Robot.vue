@@ -1,6 +1,6 @@
 <template>
   <div class="robot">
-    <div class="uk-container uk-container-xsmall">
+    <div class="uk-container uk-container">
         <div class="uk-card uk-card-small uk-card-body" ref="container">
           <Chat
             :DATAUSER="blocs['id01']"
