@@ -1,7 +1,7 @@
 <template>
   <div class="robot">
-    <div class="uk-container">
-        <div class="uk-card uk-card-body" ref="container">
+    <div class="uk-container uk-container-xsmall">
+        <div class="uk-card uk-card-small uk-card-body" ref="container">
           <Chat
             :DATAUSER="blocs['id01']"
             type="me"
@@ -69,7 +69,8 @@ export default {
 
       instance.$mount()
 
-      container.insertBefore(instance.$el, container.firstChild)
+      // container.insertBefore(instance.$el, container.firstChild)
+      container.appendChild(instance.$el)
     },
 
     goTo (goToID) {
@@ -87,7 +88,8 @@ export default {
 
       instance.$mount()
 
-      container.insertBefore(instance.$el, container.firstChild)
+      // container.insertBefore(instance.$el, container.firstChild)
+      container.appendChild(instance.$el)
     }
   },
 
@@ -178,7 +180,7 @@ export default {
         'id08': {
           txt: `<p>Merci d'avoir pris le temps de répondre à mes questions ${this.dataUser.name}.</p>
                 <p>Il y a de fortes chances que votre mission me corresponde.</p>
-                <p class="uk-margin-remove-bottom">Aussi je te partage mon email <a href="mailto:constraintsolver@gmail.com">constraintsolver@gmail.com</a> et retrouvons nous autour d'un café ☕.</p>`
+                <p class="uk-margin-remove-bottom">Aussi je vous partage mon email <a href="mailto:constraintsolver@gmail.com">constraintsolver@gmail.com</a> et retrouvons nous autour d'un café ☕.</p>`
         },
         'id09': {
           txt: `<p class="uk-margin-remove-bottom">Merci !</p>`
@@ -537,7 +539,7 @@ export default {
           go: `id15c`
         },
         'id16b': {
-          txt: `<p>Hey!, j'ai dédié <a href="https://www.thomas-desfossez.com/#/remote" target="_blank" >une page à ce sujet</p>
+          txt: `<a>Hey!, j'ai dédié <a href="https://www.thomas-desfossez.com/#/remote" target="_blank" >une page à ce sujet</a></p>
                 <p class="uk-margin-remove-bottom">Néanmoins, sachez que je peux accepter un déplacement au besoin chez le client.</p>`,
           go: `id15c`
         },
