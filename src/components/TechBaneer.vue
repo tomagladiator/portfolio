@@ -2,7 +2,7 @@
     <div class="uk-flex-center uk-flex-middle uk-grid-large" uk-grid>
 
         <Tech
-            v-for="(tech, i) in techs" :key="i"
+            v-for="(tech, i) in techs" :key="'tech'+i"
             :svg="tech.svg"
         />
 

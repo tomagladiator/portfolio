@@ -9,7 +9,7 @@
 
           <Expertise
             v-for     =" (exp, i) in expertisesFiltered"
-            :key      ="i"
+            :key      ="'Expertise'+i"
             :title    ="exp.title"
             :text     ="exp.text"
             :progress ="exp.progress"
@@ -31,7 +31,7 @@
 
           <Experience
             v-for =" (exp, i) in experiences"
-            :key  ="i"
+            :key  ="'Experience'+i"
             :date  ="exp.date"
             :title ="exp.title"
           />
@@ -44,7 +44,7 @@
 
           <Formation
             v-for =" (form, i) in formations"
-            :key  ="i"
+            :key  ="'Formation'+i"
             :data ="form"
           />
 
@@ -56,7 +56,7 @@
 
           <Recognition
             v-for =" (reco, i) in recognitions"
-            :key  ="i"
+            :key  ="'Recognition'+i"
             :text ="reco"
           />
         </div>

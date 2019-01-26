@@ -61,7 +61,7 @@
                         <template v-if="showButtonOnly">
                           <button
                               v-for     ="(cta,i) in DATAUSER.btn"
-                              :key      ="i"
+                              :key      ="'btn'+i"
                               type      ="button"
                               :disabled ="disabled"
                               class     ="uk-button uk-button-primary uk-margin-small-right uk-margin-small-bottom uk-button-small"
@@ -80,7 +80,7 @@
                           >
                             <option
                               v-for   ="(cta,i) in DATAUSER.btn"
-                              :key    ="i"
+                              :key    ="'option'+i"
                               :value  ="cta.val+'#'+cta.go"
                               class   ="uk-select"
                               :dataId ="cta.go"

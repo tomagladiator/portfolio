@@ -108,11 +108,11 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-content">
       <router-view/>
     </main>
 
-    <footer class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-background-primary" uk-grid>
+    <footer class="main-footer uk-grid-collapse uk-child-width-expand@s uk-text-center uk-background-primary" uk-grid>
       <div>
         <div class="uk-padding uk-light">Thomas Desfossez &copy; 2019</div>
       </div>
@@ -167,13 +167,13 @@ body {
   padding-bottom: 150px;
 }
 
-main {
+.main-content {
   overflow: hidden;
   display: block;
   position: relative;
 }
 
-footer {
+.main-footer {
   min-height: 150px;
   position: absolute;
   bottom: 0;

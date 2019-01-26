@@ -6,7 +6,7 @@
 
         <span
             v-for="(item, i) in data.items"
-            :key="i"
+            :key="'form'+i"
         >
             <br />
 
