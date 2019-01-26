@@ -27,7 +27,12 @@ export default new Router({
     {
       path: '/chatbot',
       name: 'chatbot',
-      component: () => import('./views/Chatbot.vue')
+      component: () => import('./views/Robot.vue')
+    },
+    {
+      path: '/robot',
+      name: 'robot',
+      component: () => import('./views/Robot.vue')
     },
     {
       path: '/contact',
