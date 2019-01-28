@@ -324,10 +324,8 @@ export default {
       duration: 400
     })
 
-    UIkit.scroll(`#chat${this.uniqueId}`).scrollTo(`#chat${this.uniqueId}`)
-  },
-
-  updated () {
+    let chat = document.getElementById(`chat${ this.uniqueId }`)
+    chat.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
   }
 }
 </script>
