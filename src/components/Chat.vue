@@ -6,7 +6,7 @@
                     <div class="uk-card-header">
                         <div class="uk-grid-small uk-flex-middle" uk-grid>
                             <div class="uk-width-expand">
-                                <div class="uk-light uk-margin-remove-top uk-text-right uk-text-small" v-html="DATAUSER.txt"></div>
+                                <div class="uk-light uk-margin-remove-top uk-text-right uk-text-small" v-html="txt"></div>
                             </div>
                             <div class="uk-width-auto">
                                 <img class="uk-border-circle" width="40" height="40" src="../assets/smiling-face.png" />
@@ -72,32 +72,27 @@
                           </button>
                         </template>
 
-                        <form v-if="showSelectOnly" id="selectForm" class="uk-flex" @:submit.prevent="">
-                          <select
-                              v-model ="inputValue"
-                              style="width: 100%;"
-                              form="selectForm"
+                        <form v-if="showSelectOnly" id="selectForm" @:submit.prevent="">
+                          <input
+                            type="text"
+                            class="uk-input uk-margin-small-bottom"
+                            v-model="inputValue"
+                            @keyup="getQst"
+                            :disabled="disabled"
+                            placeholder="Votre question ici"
                           >
-                            <option
-                              v-for   ="(cta,i) in DATAUSER.btn"
-                              :key    ="'option'+i"
-                              :value  ="cta.val+'#'+cta.go"
-                              class   ="uk-select"
-                              :dataId ="cta.go"
-                            >
-                              {{cta.val}}
-                            </option>
-                          </select>
-
                           <button
-                              type      ="submit"
+                              v-for     ="(cta,i) in resultQst"
+                              v-if      ="i <= 4"
+                              :key      ="'btn'+i"
+                              type      ="button"
                               :disabled ="disabled"
-                              class     ="uk-button uk-button-primary uk-button-small"
-                              @click    ="emitValue"
+                              class     ="uk-button uk-display-block uk-button-link uk-text-lowercase uk-text-left uk-margin-small-right uk-margin-small-bottom uk-button-small"
+                              @click    ="emitNext"
+                              :value    ="cta.go"
                           >
-                              Envoyer
+                              {{cta.val}}
                           </button>
-
                         </form>
                     </div>
                 </div>
@@ -124,6 +119,16 @@ export default {
       default: () => {}
     },
     type: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    resultQst: {
+      type: Array,
+      required: false,
+      default: () => []
+    },
+    txt: {
       type: String,
       required: false,
       default: ''
@@ -194,6 +199,11 @@ export default {
   },
 
   methods: {
+    getQst (event) {
+      let inputValue = event.target.value // "Quel CMS ..."
+      EventBus.$emit('getQst', inputValue)
+    },
+
     emitNext (event) {
       this.disabled = true
 
@@ -203,6 +213,7 @@ export default {
 
       setTimeout(() => {
         EventBus.$emit('goTo', goToID)
+        this.$destroy()
       }, 800)
     },
 
@@ -248,6 +259,7 @@ export default {
 
       setTimeout(() => {
         EventBus.$emit('goTo', goToID)
+        this.$destroy()
       }, 800)
     }
   },
