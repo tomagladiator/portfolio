@@ -358,7 +358,8 @@ export default {
 
           resultQst.push({
             val: words[0],
-            go: words[1]
+            go: words[1],
+            isSelected: 'uk-button-link'
           })
         })
       }
@@ -856,7 +857,7 @@ export default {
       children: [
         {
           name: 'Chat',
-          id: 'id01',
+          id: 'id13',
           type: 'me'
         }
       ]

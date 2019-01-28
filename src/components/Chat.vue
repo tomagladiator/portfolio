@@ -1,5 +1,5 @@
 <template>
-    <div class="chat" :class="injectedClass">
+    <div :id="`chat${uniqueId}`" class="chat" :class="injectedClass">
         <template v-if="this.type === 'user'">
             <div class="uk-flex uk-flex-right">
                 <div class="uk-card uk-card-default uk-width-1-2@m this-is-user uk-margin-small-top">
@@ -72,28 +72,36 @@
                           </button>
                         </template>
 
-                        <form v-if="showSelectOnly" id="selectForm" @:submit.prevent="">
-                          <input
-                            type="text"
-                            class="uk-input uk-margin-small-bottom"
-                            v-model="inputValue"
-                            @keyup="getQst"
-                            :disabled="disabled"
-                            placeholder="Votre question ici"
-                          >
-                          <button
-                              v-for     ="(cta,i) in resultQst"
-                              v-if      ="i <= 4"
-                              :key      ="'btn'+i"
-                              type      ="button"
-                              :disabled ="disabled"
-                              class     ="uk-button uk-display-block uk-button-link uk-text-lowercase uk-text-left uk-margin-small-right uk-margin-small-bottom uk-button-small"
-                              @click    ="emitNext"
-                              :value    ="cta.go"
-                          >
-                              {{cta.val}}
-                          </button>
-                        </form>
+                        <div v-if="showSelectOnly">
+                          <div class="uk-inline uk-width-1-1">
+                              <span class="uk-form-icon uk-form-icon-flip">?</span>
+
+                              <input
+                                type="text"
+                                class="uk-input"
+                                v-model="inputValue"
+                                @keyup="getQst"
+                                :disabled="disabled"
+                                :suggest="injectedPlaceholder"
+                              >
+                          </div>
+
+                          <div :id="uniqueId" :style="'top:10px !important'">
+                            <button
+                                v-for     ="(cta,i) in resultQst"
+                                v-if      ="i <= 4"
+                                :key      ="'btn'+i"
+                                type      ="button"
+                                :disabled ="disabled"
+                                class     ="uk-button uk-display-block uk-text-lowercase uk-text-left uk-margin-small-right uk-margin-small-bottom uk-button-small"
+                                :class    ="cta.isSelected"
+                                @click    ="emitNext"
+                                :value    ="cta.go"
+                            >
+                                {{cta.val}}
+                            </button>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,6 +112,7 @@
 <script>
 import { EventBus } from '../event-bus.js'
 import { VueTyper } from 'vue-typer'
+import UIkit from 'uikit'
 
 export default {
   name: 'chat',
@@ -146,6 +155,21 @@ export default {
   },
 
   computed: {
+    uniqueId () {
+      const random = Math.floor(Math.random() * 10000)
+      return `id${random}`
+    },
+
+    injectedPlaceholder () {
+      if (this.resultQst !== undefined) {
+        if (this.resultQst[0] !== undefined) {
+          return this.resultQst[0].val
+        }
+      } else {
+        return 'Votre question ici'
+      }
+    },
+
     showButtonOnly () {
       if (this.DATAUSER.btn === undefined) {
         return false
@@ -202,6 +226,10 @@ export default {
     getQst (event) {
       let inputValue = event.target.value // "Quel CMS ..."
       EventBus.$emit('getQst', inputValue)
+
+      if (UIkit.dropdown(`#${this.uniqueId}`)) {
+        UIkit.dropdown(`#${this.uniqueId}`).show()
+      }
     },
 
     emitNext (event) {
@@ -209,6 +237,11 @@ export default {
 
       let userText = event.target.outerText // "ALLONS-Y!"
       let goToID = event.target.value // "id102"
+
+      if (UIkit.dropdown(`#${this.uniqueId}`)) {
+        UIkit.dropdown(`#${this.uniqueId}`).$destroy(true)
+      }
+
       EventBus.$emit('userFeedback', userText)
 
       setTimeout(() => {
@@ -281,6 +314,20 @@ export default {
       this.showTxt = true
       this.animTxt = 'uk-animation-slide-bottom-small'
     }, 800)
+  },
+
+  mounted () {
+    UIkit.dropdown(`#${this.uniqueId}`, {
+      mode: 'click',
+      pos: 'bottom-justify',
+      animation: 'uk-animation-slide-top-small',
+      duration: 400
+    })
+
+    UIkit.scroll(`#chat${this.uniqueId}`).scrollTo(`#chat${this.uniqueId}`)
+  },
+
+  updated () {
   }
 }
 </script>
