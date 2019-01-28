@@ -857,7 +857,7 @@ export default {
       children: [
         {
           name: 'Chat',
-          id: 'id13',
+          id: 'id01',
           type: 'me'
         }
       ]
