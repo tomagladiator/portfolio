@@ -627,6 +627,10 @@ export default {
             {
               val: `Combien d'année d'expérience as-tu dans le web ?`,
               go: `id13x`
+            },
+            {
+              val: `Quel est ton expérience avec le CMS Sitecore ?`,
+              go: `id13y`
             }
           ]
         },
@@ -780,6 +784,11 @@ export default {
         },
         'id13x': {
           txt: `<p class="uk-margin-remove-bottom">J'ai commencé en 2008, je vous laisse le calcul ;)</p>`,
+          go: `id15`
+        },
+        'id13y': {
+          txt: `<p>J'ai participé à un projet transactionnel en Sitecore, de plus j'ai eu la formation "Sitecore® Web Experience Management eLearning"</p>
+                <p class="uk-margin-remove-bottom">Enfin j'ai fais de la R&D avec JSS de Sitecore et VueJS</p>`,
           go: `id15`
         },
         'id14': {

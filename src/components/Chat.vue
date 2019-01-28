@@ -37,7 +37,7 @@
                     </div>
 
                     <div class="uk-card-footer" v-if="showFooter" >
-                        <form v-if="showInputOnly" id="inputForm" class="uk-flex" @:submit.prevent="">
+                        <div v-if="showInputOnly" class="uk-flex">
                             <input
                                 :type        ="customType"
                                 ref          ="inputText"
@@ -49,14 +49,14 @@
                             />
 
                             <button
-                                type      ="submit"
+                                type      ="button"
                                 :disabled ="disabled"
                                 class     ="uk-button uk-button-primary uk-button-small"
                                 @click    ="emitValue"
                             >
                                 Envoyer
                             </button>
-                        </form>
+                        </div>
 
                         <template v-if="showButtonOnly">
                           <button
@@ -324,8 +324,12 @@ export default {
       duration: 400
     })
 
-    let chat = document.getElementById(`chat${ this.uniqueId }`)
-    chat.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })
+    let chat = document.getElementById(`chat${this.uniqueId}`)
+    chat.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest'
+    })
   }
 }
 </script>
