@@ -1,5 +1,5 @@
 <template>
-  <div class="business-card uk-animation-slide-bottom-small">
+  <div class="businessCard uk-animation-slide-bottom-small">
     <div class="uk-card uk-card-default uk-border-rounded uk-box-shadow-large">
         <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -9,7 +9,7 @@
 
                 <div class="uk-width-expand@m">
                     <h2 class="uk-card-title uk-margin-remove-bottom">Thomas Desfossez</h2>
-                    <p class="uk-margin-remove-top uk-margin-remove-bottom">{{ msg }}</p>
+                    <p class="uk-margin-remove-top uk-margin-remove-bottom">Senior Front-End Web <vue-typer :text='bipBoop' :erase-on-complete='true' erase-delay='70' erase-style='select-back' @erased='onErased'/> - Freelancer</p>
                     <p class="uk-text-meta"><span class="uk-icon " uk-icon="icon: location"></span> Neuville-Sur-Saône, 69250, FRANCE</p>
                 </div>
             </div>
@@ -72,22 +72,35 @@
 </template>
 
 <script>
+import { VueTyper } from 'vue-typer'
+
 export default {
   name: 'BusinessCard',
 
-  props: {
-    msg: String
+  components: {
+    VueTyper
+  },
+
+  methods: {
+    onErased () {
+      this.bipBoop === 'Developer' ? this.bipBoop = 'Mercenaire' : this.bipBoop = 'Developer'
+    }
   },
 
   data () {
     return {
       myImage: '../assets/thomas-avatar.jpg',
-      otherImage: '../assets/thomas-desfossez-2019.jpg'
+      otherImage: '../assets/thomas-desfossez-2019.jpg',
+      bipBoop: 'Developer'
     }
   }
 }
 </script>
 
-<style scoped lang="scss">
-
+<style lang="scss">
+.businessCard .vue-typer {
+  .typed {
+    color: #666 !important
+  }
+}
 </style>

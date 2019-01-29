@@ -1,5 +1,5 @@
 <template>
-  <div class="uk-section uk-section-secondary uk-preserve-color">
+  <div class="RobotCta uk-section uk-section-secondary uk-preserve-color">
       <div class="uk-container">
 
         <div uk-grid  style="justify-content:center" class="uk-child-width-1-2@m uk-grid">
@@ -178,7 +178,7 @@ export default {
 </script>
 
 <style lang="scss">
-.vue-typer {
+.RobotCta .vue-typer {
   .typed {
     color: rgba(255, 255, 255, 0.7) !important
   }
