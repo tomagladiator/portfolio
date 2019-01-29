@@ -9,7 +9,7 @@
                                 <div class="uk-light uk-margin-remove-top uk-text-right uk-text-small" v-html="txt"></div>
                             </div>
                             <div class="uk-width-auto">
-                                <img class="uk-border-circle" width="40" height="40" src="../assets/smiling-face.png" />
+                                <img class="uk-border-circle" width="40" height="40" :src="goodEmoji" />
                             </div>
                         </div>
                     </div>
@@ -21,18 +21,30 @@
             <div class="uk-flex uk-flex-left">
                 <div class="uk-card uk-card-default uk-width-1-2@m uk-margin-small-top">
                     <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
+                        <div class="uk-grid-small uk-flex uk-flex-between" uk-grid>
+                            <div>
                                 <img class="uk-border-circle" width="40" height="40" src="../assets/thomas-desfossez-2019.jpg" />
                             </div>
-                            <div class="uk-width-expand">
-                                <div class="uk-margin-remove-top uk-text-small" :class="animTxt" v-if="showTxt" v-html="DATAUSER.txt"></div>
-                                <div class="wave-dot"  v-if="!showTxt">
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                    <span class="dot"></span>
-                                </div>
+                            <div>
+                                <button
+                                    v-if   ="showGoBack"
+                                    type   ="button"
+                                    class  ="uk-button uk-button-default uk-animation-scale-up"
+                                    @click ="goBack"
+                                    uk-tooltip="Revenir ici"
+                                >
+                                    <span uk-icon="reply"></span>
+                                </button>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-card-body">
+                        <div class="uk-margin-remove-top uk-text-small" :class="animTxt" v-if="showTxt" v-html="DATAUSER.txt"></div>
+                        <div class="wave-dot"  v-if="!showTxt">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
                         </div>
                     </div>
 
@@ -45,6 +57,7 @@
                                 value        =""
                                 :placeholder ="DATAUSER.input.val"
                                 v-model      ="inputValue"
+                                :disabled    ="disabled"
                                 required
                             />
 
@@ -141,6 +154,16 @@ export default {
       type: String,
       required: false,
       default: ''
+    },
+    currentId: {
+      type: String,
+      required: false,
+      default: 'id01'
+    },
+    lastId: {
+      type: String,
+      required: false,
+      default: 'id01'
     }
   },
 
@@ -155,9 +178,31 @@ export default {
   },
 
   computed: {
+    goodEmoji () {
+      if (this.lastId === 'id02') {
+        return './img/chatbot/emoji-deal-with-it.gif'
+      } else if (this.lastId === 'id08') {
+        return './img/chatbot/emoji-party.gif'
+      } else if (this.lastId === 'id10') {
+        return './img/chatbot/emoji-sad.gif'
+      } else {
+        return './img/chatbot/emoji-smile.gif'
+      }
+    },
+
     uniqueId () {
       const random = Math.floor(Math.random() * 10000)
       return `id${random}`
+    },
+
+    showGoBack () {
+      if (this.currentId !== 'id01') {
+        if (this.currentId !== this.lastId) {
+          return true
+        }
+      } else {
+        return false
+      }
     },
 
     showButtonOnly () {
@@ -222,6 +267,11 @@ export default {
       }
     },
 
+    goBack () {
+      this.disabled = true
+      EventBus.$emit('goBack', this.currentId)
+    },
+
     emitNext (event) {
       this.disabled = true
 
@@ -232,13 +282,11 @@ export default {
         UIkit.dropdown(`#${this.uniqueId}`).$destroy(true)
       }
 
-      console.log(3, event)
-
       EventBus.$emit('userFeedback', userText)
 
       setTimeout(() => {
         EventBus.$emit('goTo', goToID)
-        this.$destroy()
+        // this.$destroy()
       }, 800)
     },
 
@@ -284,7 +332,7 @@ export default {
 
       setTimeout(() => {
         EventBus.$emit('goTo', goToID)
-        this.$destroy()
+        // this.$destroy()
       }, 800)
     }
   },

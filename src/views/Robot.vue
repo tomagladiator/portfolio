@@ -2,13 +2,8 @@
   <div class="robot">
     <div class="uk-container uk-container">
         <div class="uk-card uk-card-small uk-card-body" ref="container">
-          <!--<Chat
-            :DATAUSER="blocs['id13']"
-            :resultQst="resultQst"
-            type="me"
-          />-->
           <template v-for="(child, i) in children">
-              <component :is="child.name" :DATAUSER="blocs[child.id]" :txt="child.txt" :resultQst="resultQst" :type="child.type" :key="i"></component>
+              <component :is="child.name" :DATAUSER="blocs[child.id]" :txt="child.txt" :resultQst="resultQst" :type="child.type" :key="i" :currentId="child.id" :lastId="lastId"></component>
           </template>
         </div>
     </div>
@@ -32,6 +27,10 @@ export default {
   },
 
   mounted () {
+    EventBus.$on('goBack', currentId => {
+      this.goTo(currentId)
+    })
+
     EventBus.$on('getQst', inputValue => {
       this.getQst(inputValue)
     })
@@ -341,20 +340,18 @@ export default {
 
     getQst (inputValue) {
       let resultQst = []
-
-
       let fuzz = this.FuzzySet()
+      let result = []
 
       for (let i in this.blocs['id13'].btn) {
         fuzz.add(`${this.blocs['id13'].btn[i].val}###${this.blocs['id13'].btn[i].go}`)
       }
 
-      let result = []
       result = fuzz.get(inputValue, null, .005)
 
       if (result !== null) {
         result.forEach(function(element) {
-          var words = element[1].split('###');
+          let words = element[1].split('###');
 
           resultQst.push({
             val: words[0],
@@ -379,10 +376,11 @@ export default {
     goTo (goToID) {
       let newChat = {}
       newChat.name = 'Chat'
-      newChat.id = `${goToID}`
+      newChat.id = goToID
       newChat.type = 'me'
       this.children.push(newChat)
       this.resultQst = []
+      this.lastId = goToID
     }
   },
 
@@ -401,7 +399,7 @@ export default {
           ]
         },
         'id02': {
-          txt: `<p class="uk-margin-remove-bottom">Si je comprends bien tu es intéressé par mon profil ou bien alors cherches-tu peut-être à savoir un peu plus sur mes compétences? 🚀</p>`,
+          txt: `<p class="uk-margin-remove-bottom">Si je comprends bien, tu es intéressé par mon profil ou bien alors cherches-tu peut-être à savoir un peu plus sur mes compétences? 🚀</p>`,
           btn: [
             {
               val: `Je suis intéressé par ton profil 👍`,
@@ -473,8 +471,8 @@ export default {
         },
         'id08': {
           txt: `<p>Merci d'avoir pris le temps de répondre à mes questions ${this.dataUser.name}.</p>
-                <p>Il y a de fortes chances que votre mission me corresponde.</p>
-                <p class="uk-margin-remove-bottom">Aussi je vous partage mon email <a href="mailto:constraintsolver@gmail.com">constraintsolver@gmail.com</a> et retrouvons nous autour d'un café ☕.</p>`
+                <p>Il y a de fortes chances que ta mission me corresponde.</p>
+                <p class="uk-margin-remove-bottom">Aussi je te partage mon email <a href="mailto:constraintsolver@gmail.com">constraintsolver@gmail.com</a> et retrouvons nous autour d'un café ☕.</p>`
         },
         'id09': {
           txt: `<p class="uk-margin-remove-bottom">Merci !</p>`
@@ -482,7 +480,7 @@ export default {
         'id10': {
           txt: `<p>😞 Je suis navré que mon profil ne soit pas adapté à cette mission.</p>
                   <p><img class="uk-border-rounded" src='./img/chatbot/sad.gif' /></p>
-                  <p class="uk-margin-remove-bottom">N'hésitez pas à me contacter s'il y a du changement !</p>`
+                  <p class="uk-margin-remove-bottom">N'hésites pas à me contacter s'il y a du changement !</p>`
         },
         'id11': {
           txt: `<p>Oh, tu trouveras tout ce que tu souhaites savoir à mon sujet en allant sur <a class="uk-text-primary" href="http://linkedin.com/in/tdesfossez" target="_blank">mon Linkedin</a></p>
@@ -533,51 +531,51 @@ export default {
           txt: `<p class="uk-margin-remove-bottom">Surprenez-moi!</p>`,
           btn: [
             {
-              val: `Qu'avez-vous appris cette semaine ?`,
+              val: `Qu'as tu appris cette semaine ?`,
               go: `id13a`
             },
             {
-              val: `Qu'est ce qui vous motive où vous intéresse dans le développement ?`,
+              val: `Qu'est ce qui te motive où t'intéresse dans le développement ?`,
               go: `id13b`
             },
             {
-              val: `Quel a été le dernier défi technique que vous avez expérimenté et comment l'avez-vous résolu ?`,
+              val: `Quel a été le dernier défi technique que tu as expérimenté et comment l'as-tu résolu ?`,
               go: `id13c`
             },
             {
-              val: `Quelles considérations en terme d'UI, Sécurité, Performance, SEO, Maintenabilité ou Technologie faites-vous lorsque vous concevez une application web ou site ?`,
+              val: `Quelles considérations en terme d'UI, Sécurité, Performance, SEO, Maintenabilité ou Technologie fais-tu lorsque tu conçois une application web ou site ?`,
               go: `id13d`
             },
             {
-              val: `Parlez-moi de votre environnement de travail préféré.`,
+              val: `Parle-moi de ton environnement de travail préféré.`,
               go: `id13e`
             },
             {
-              val: `Avec quels logiciels de gestion de versions êtes-vous familier?`,
+              val: `Avec quels logiciels de gestion de versions es-tu familier?`,
               go: `id13f`
             },
             {
-              val: `Pouvez-vous décrire comment vous travaillez (votre workflow) lorsque vous créez une page web ?`,
+              val: `peux-tu décrire comment tu travailles (ton workflow) lorsque tu créer une page web ?`,
               go: `id13g`
             },
             {
-              val: `Comment optimisez-vous les performances de vos pages web (assets/ressources) ?`,
+              val: `Comment optimise-tu les performances de tes pages web (assets/ressources) ?`,
               go: `id13h`
             },
             {
-              val: `Donnez 3 façons qui permettent de réduire le temps de chargement d'une page (perçu ou réel).`,
+              val: `Donnes 3 façons qui permettent de réduire le temps de chargement d'une page (perçu ou réel).`,
               go: `id13i`
             },
             {
-              val: `Quels outils utilisez-vous pour tester la performance de votre code ?`,
+              val: `Quel outil utilises-tu pour tester la performance de ton code ?`,
               go: `id13j`
             },
             {
-              val: `Si vous pouviez maîtriser parfaitement une technologie cette année, laquelle serait-elle ?`,
+              val: `Si tu peux maîtriser parfaitement une technologie cette année, laquelle serait-elle ?`,
               go: `id13k`
             },
             {
-              val: `Expliquez ce que sont ARIA et les lecteurs d'écrans, et comment rendre votre site internet accessible`,
+              val: `Explique ce que sont ARIA et les lecteurs d'écrans, et comment rendre ton site internet accessible`,
               go: `id13l`
             },
             {
@@ -805,6 +803,10 @@ export default {
             {
               val: `Do you speak english ?`,
               go: `id14c`
+            },
+            {
+              val: `Où habites-tu ?`,
+              go: `id14d`
             }
           ]
         },
@@ -818,6 +820,10 @@ export default {
         },
         'id14c': {
           txt: `<p class="uk-margin-remove-bottom">I can keep a conversation without difficulty nevertheless my english is not fluent.</p>`,
+          go: `id15b`
+        },
+        'id14d': {
+          txt: `<p class="uk-margin-remove-bottom">Actuellement à Neuville-sur-Saône, proche de Lyon</p>`,
           go: `id15b`
         },
         'id16': {
@@ -860,6 +866,8 @@ export default {
         name: '',
         email: ''
       },
+
+      lastId: 'id01',
 
       resultQst: [],
 
