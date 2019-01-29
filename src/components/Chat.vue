@@ -82,7 +82,7 @@
                                 v-model="inputValue"
                                 @keyup="getQst"
                                 :disabled="disabled"
-                                :suggest="injectedPlaceholder"
+                                :placeholder="'Votre question ici'"
                               >
                           </div>
 
@@ -158,16 +158,6 @@ export default {
     uniqueId () {
       const random = Math.floor(Math.random() * 10000)
       return `id${random}`
-    },
-
-    injectedPlaceholder () {
-      if (this.resultQst !== undefined) {
-        if (this.resultQst[0] !== undefined) {
-          return this.resultQst[0].val
-        }
-      } else {
-        return 'Votre question ici'
-      }
     },
 
     showButtonOnly () {
@@ -321,7 +311,7 @@ export default {
   mounted () {
     UIkit.dropdown(`#${this.uniqueId}`, {
       mode: 'click',
-      pos: 'bottom-justify',
+      pos: 'top-justify',
       animation: 'uk-animation-slide-top-small',
       duration: 400
     })

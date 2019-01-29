@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;animation: uk-animation-slide-top-small;show-on-up: true">
       <div class="uk-container uk-container-expand uk-background-primary">
 
         <!-- NAVBAR -->
@@ -112,7 +112,7 @@
 
     <footer class="main-footer uk-grid-collapse uk-child-width-expand@s uk-text-center uk-background-primary" uk-grid>
       <div>
-        <div class="uk-padding uk-light">Thomas Desfossez &copy; 2019</div>
+        <div class="uk-padding-small uk-light">Thomas Desfossez &copy; 2019</div>
       </div>
     </footer>
   </div>
