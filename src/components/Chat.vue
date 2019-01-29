@@ -179,14 +179,21 @@ export default {
 
   computed: {
     goodEmoji () {
+      let path = `./img/chatbot/emoji-`
       if (this.lastId === 'id02') {
-        return './img/chatbot/emoji-deal-with-it.gif'
-      } else if (this.lastId === 'id08') {
-        return './img/chatbot/emoji-party.gif'
-      } else if (this.lastId === 'id10') {
-        return './img/chatbot/emoji-sad.gif'
+        return `${path}deal-with-it.gif`
+      } else if (this.lastId === `id08`) {
+        return `${path}party.gif`
+      } else if (this.lastId === `id10`) {
+        return `${path}sad.gif`
+      } else if (this.lastId === `id13`) {
+        return `${path}monocle.gif`
+      } else if (this.lastId === `id11a`) {
+        return `${path}angel.gif`
+      } else if (this.lastId === `id03`) {
+        return `${path}surprise.gif`
       } else {
-        return './img/chatbot/emoji-smile.gif'
+        return `${path}smile.gif`
       }
     },
 

@@ -669,6 +669,10 @@ export default {
               go: `id14e`
             }, 
             {
+              val: `En dehors du travail, qu'est-ce qui te passionnes ?`,
+              go: `id14f`
+            }, 
+            {
               val: `Es-tu ouvert à un CDI ?`,
               go: `id16a`
             },
@@ -952,10 +956,10 @@ export default {
           go: `id15`
         },
         'id14f': {
-          txt: `<p>XXXXX</p>
-                <p>XXXXX</p>
-                <p>XXXXX</p>
-                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          txt: `<p>J'aime les jeux de plateaux</p>
+                <p>Au point ou j'organise un évènement mensuel dans ma ville</p>
+                <p>J'ai même fait un petit site <a href="https://neuville-sur-board.space/" target="_blank">neuville-sur-board</a> (oui il ressemble à mon site hahaha)</p>
+                <p class="uk-margin-remove-bottom">Inscris-toi!</p>`,
           go: `id15`
         },
         'id14g': {
