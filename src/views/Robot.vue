@@ -14,6 +14,7 @@
 /* eslint-disable */
 import Chat from '@/components/Chat.vue'
 import { EventBus } from '../event-bus.js'
+import UIkit from 'uikit'
 
 export default {
   name: 'Robot',
@@ -25,8 +26,20 @@ export default {
   metaInfo: {
     title: 'ROBOT'
   },
-
+      
   mounted () {
+    EventBus.$on('success', customMessage => {
+      if (!this.success.includes(customMessage)) {
+        this.successNumber++
+        this.success.push(customMessage)
+        UIkit.notification({ message: `🏆 Succès ${this.successNumber}/4 - ${customMessage}`, pos: 'bottom-right' })
+      }
+
+      if (this.successNumber === 4) {
+        UIkit.notification({ message: `⭐⭐ Bravo, vous avez gagné mon respect! ⭐⭐`, pos: 'bottom-right' })
+      }
+    })
+
     EventBus.$on('goBack', currentId => {
       this.goTo(currentId)
     })
@@ -687,6 +700,22 @@ export default {
             { 
               val: `Quel est ton TJM ?`,
               go: `id16d`
+            },
+            { 
+              val: `Quel sont tes disponibilités ?`,
+              go: `id16e`
+            },
+            { 
+              val: `Si trois personnes sont dans une pièce, quelle est la  probabilité qu'au moins deux personnes soient nées le même jour de la semaine?`,
+              go: `id17a`
+            },
+            { 
+              val: `Comment expliqueriez-vous le métier de consultant à un enfant de 4 à 6 ans ?`,
+              go: `id17b`
+            },
+            { 
+              val: `Que feriez-vous avec 200 000€ ?`,
+              go: `id17c`
             }
           ]
         },
@@ -994,10 +1023,8 @@ export default {
           go: `id15`
         },
         'id16e': {
-          txt: `<p>XXXXX</p>
-                <p>XXXXX</p>
-                <p>XXXXX</p>
-                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          txt: `<p>Je suis disponible en ce moment pour du 4 jours/semaine</p>
+                <p class="uk-margin-remove-bottom">(Le mercredi, c'est le jour ou je garde mes filles)</p>`,
           go: `id15`
         },
         'id16f': {
@@ -1021,6 +1048,46 @@ export default {
                 <p class="uk-margin-remove-bottom">XXXXX</p>`,
           go: `id15`
         },
+        'id17a': {
+          txt: `<p>Soit: Al, Bob et Clovis</p>
+                <p>
+                  Al peut être né le [Lu, Ma, Me, Je, Ve, Sa, Di] <br>
+                  Bob peut être né le [Lu, Ma, Me, Je, Ve, Sa, Di] <br>
+                  Clovis peut être né le [Lu, Ma, Me, Je, Ve, Sa, Di] <br>
+                  Soit (7 * 7 * 7)
+                </p>
+                <p>
+                  Al peut naitre un des 7 jours <br>
+                  Bob peut naitre un des 6 jours restant <br>
+                  Clovis peut naitre un des 5 jours restant <br>
+                  Soit (7 * 6 * 5)
+                </p>
+                <p>
+                  La probabilité que Al, Bob et Clovis soient nés un jour différent est donc de <br>
+                  (7 * 6 * 5) / (7 * 7 * 7) = 210 / 343
+                </p>
+                <p class="uk-margin-remove-bottom">
+                  La probabilité qu'au moins deux soient nés un jour différent est donc de <br>
+                  1 - (7 * 6 * 5) / (7 * 7 * 7) <br>
+                  Soit environ 38% de chance.
+                </p>`,
+          go: `id15`
+        },
+        'id17b': {
+          txt: `<p>Comme ma définition sera totallement différente entre un enfant de 4 et un autre de 6 ans, je vais faire pour 5 ans:</p>
+                <p>"Tu aimes les croissants Marilou ?</p>
+                <p>Imagine que le boulanger tombe malade ou qu'il part longtemps en vacance!! Qui va te faire de bons croissants ??? </p>
+                <p>Vois--tu, un consultant, c'est une personne qui accepte de remplacer ce boulanger.</p>
+                <p>Il accepte de travailler foOort pour le remplacer et de se déplacer de loin de chez lui parfois...</p>
+                <p class="uk-margin-remove-bottom">Il y a des consultants pour les boulangers, mais aussi pour pleins d'autres métiers.
+                <br>Tu as compris Marilou?"</p>`,
+          go: `id15`
+        },
+        'id17c': {
+          txt: `<p>Désolé cher Thomas de 8 ans que j'étais, je n'utiliserai pas cette somme pour un voyage dans l'espace 👨‍🚀 ...</p>
+                <p class="uk-margin-remove-bottom">Ça nous permettra de ne pas negocier un prêt avec la banque pour l'achat de notre nouvel appartement</p>`,
+          go: `id15`
+        },
       }
     }
   },
@@ -1035,6 +1102,10 @@ export default {
       lastId: 'id01',
 
       resultQst: [],
+
+      successNumber: 0,
+
+      success:[],
 
       children: [
         {

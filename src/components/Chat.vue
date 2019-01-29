@@ -377,6 +377,16 @@ export default {
       block: 'start',
       inline: 'nearest'
     })
+
+    if (this.lastId === 'id17a') {
+      EventBus.$emit('success', '(soit 0.06666666∞)')
+    } else if (this.lastId === 'id17b') {
+      EventBus.$emit('success', '#Front-end Web Boulanger')
+    } else if (this.lastId === 'id17c') {
+      EventBus.$emit('success', 'Trop Terre à terre 🏡')
+    } else if (this.lastId === 'id14e') {
+      EventBus.$emit('success', 'La politesse ne coûte rien et achète tout.')
+    }
   },
 
   updated () {
@@ -420,6 +430,17 @@ export default {
 
 .wave-dot .dot:nth-child(3) {
   animation-delay: -0.45s;
+}
+
+.uk-notification-message {
+  background-color: #303131;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+.uk-notification-close {
+  width:10px;
+  height:10px;
 }
 
 @keyframes wave {
