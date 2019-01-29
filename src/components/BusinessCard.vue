@@ -9,7 +9,7 @@
 
                 <div class="uk-width-expand@m">
                     <h2 class="uk-card-title uk-margin-remove-bottom">Thomas Desfossez</h2>
-                    <p class="uk-margin-remove-top uk-margin-remove-bottom">Senior Front-End Web <vue-typer :text='bipBoop' :erase-on-complete='true' erase-delay='70' erase-style='select-back' @erased='onErased'/> - Freelancer</p>
+                    <p class="uk-margin-remove-top uk-margin-remove-bottom">Senior Front-End Web <vue-typer :text='bipBoop' :erase-on-complete='true' :erase-delay='70' erase-style='select-back' @erased='onErased'/> - Freelancer</p>
                     <p class="uk-text-meta"><span class="uk-icon " uk-icon="icon: location"></span> Neuville-Sur-Saône, 69250, FRANCE</p>
                 </div>
             </div>
