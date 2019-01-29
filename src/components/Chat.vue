@@ -339,9 +339,9 @@ export default {
 
   created () {
     if (this.type === 'me') {
-      this.injectedClass = `uk-animation-slide-left-small`
+      this.injectedClass = `uk-animation-slide-left-small chat-${this.type}`
     } else {
-      this.injectedClass = `uk-animation-slide-right-small`
+      this.injectedClass = `uk-animation-slide-right-small chat-${this.type}`
     }
 
     if (this.DATAUSER.go !== undefined) {
@@ -370,6 +370,12 @@ export default {
       block: 'start',
       inline: 'nearest'
     })
+  },
+
+  updated () {
+    if (this.currentId !== this.lastId) {
+      this.disabled = true
+    }
   }
 }
 </script>
@@ -377,6 +383,10 @@ export default {
 <style lang="css">
 .chat {
     opacity: 0
+}
+
+.chat-me + .chat-me .uk-card-header {
+  display: none
 }
 
 .this-is-user .uk-card-header {

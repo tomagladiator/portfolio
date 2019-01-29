@@ -485,7 +485,7 @@ export default {
         'id11': {
           txt: `<p>Oh, tu trouveras tout ce que tu souhaites savoir à mon sujet en allant sur <a class="uk-text-primary" href="http://linkedin.com/in/tdesfossez" target="_blank">mon Linkedin</a></p>
                   <p>Tu peux aussi regarder <a href="https://www.thomas-desfossez.com/#/realisations" class="uk-text-primary" target="_blank">mes réalisations</a></p>
-                  <p class="uk-margin-remove-bottom">Tu peux aussi jeteer un oeil à <a href="https://www.thomas-desfossez.com/#/expertise" class="uk-text-primary" target="_blank">mes compétences</a></p>`,
+                  <p class="uk-margin-remove-bottom">Tu peux aussi jeter un oeil à <a href="https://www.thomas-desfossez.com/#/expertise" class="uk-text-primary" target="_blank">mes compétences</a></p>`,
           go: 'id11a'
         },
         'id11a': {
@@ -506,26 +506,8 @@ export default {
           ]
         },
         'id12': {
-          txt: `<p><img class="uk-border-rounded" src='./img/chatbot/chat-chouette.gif' /></p>
-                <p class="uk-margin-remove-bottom">Très bien, quel sujet aimerais-tu aborder ?</p>`,
-          btn: [
-            {
-              val: `Technique général`,
-              go: `id13`
-            },
-            {
-              val: `Personnel`,
-              go: `id14`
-            },
-            {
-              val: `Conditions de travail`,
-              go: `id16`
-            },
-            {
-              val: `C'est tout bon pour moi`,
-              go: `id03`
-            }
-          ]
+          txt: `<p><img class="uk-border-rounded" src='./img/chatbot/chat-chouette.gif' /></p>`,
+          go: `id13`
         },
         'id13': {
           txt: `<p class="uk-margin-remove-bottom">Surprenez-moi!</p>`,
@@ -629,6 +611,78 @@ export default {
             {
               val: `Quel est ton expérience avec le CMS Sitecore ?`,
               go: `id13y`
+            },
+            {
+              val: `Quel est ton plus gros succès ?`,
+              go: `id13z`
+            },
+            {
+              val: `Quel est ton plus gros echec ? et qu'as-tu appris ?`,
+              go: `id13aa`
+            },
+            {
+              val: `Que pensez-vous de la culture de l'entreprise ?`,
+              go: `id13ab`
+            },
+            {
+              val: `Utilises-tu GIT comme solution de versioning ?`,
+              go: `id13ac`
+            },
+            {
+              val: `Ou te vois-tu dans 5 ans ?`,
+              go: `id13ad`
+            },
+            {
+              val: `Quel est ton expérience avec JAVA ?`,
+              go: `id13ae`
+            },
+            {
+              val: `Sais-tu parler anglais ?`,
+              go: `id13af`
+            },
+            {
+              val: `Quel type d'entreprise recherches-tu ?`,
+              go: `id13ag`
+            },
+            {
+              val: `Quel est ton parcours professionnel?`,
+              go: `id13ah`
+            },
+            {
+              val: `Quel est ton statut au Canada et en France ?`,
+              go: `id14a`
+            },
+            {
+              val: `Joues-tu aux jeux vidéo ?`,
+              go: `id14b`
+            },
+            {
+              val: `Do you speak English ?`,
+              go: `id14c`
+            },
+            {
+              val: `Où habites-tu ?`,
+              go: `id14d`
+            }, 
+            {
+              val: `Salut, Ça va ?`,
+              go: `id14e`
+            }, 
+            {
+              val: `Es-tu ouvert à un CDI ?`,
+              go: `id16a`
+            },
+            {
+              val: `Pourquoi le télètravail ?`,
+              go: `id16b`
+            },
+            {
+              val: `Ton TJM est-il négociable ?`,
+              go: `id16c`
+            },
+            { 
+              val: `Quel est ton TJM ?`,
+              go: `id16d`
             }
           ]
         },
@@ -636,46 +690,8 @@ export default {
           txt: `<p class="uk-margin-remove-bottom">Une autre question ?</p>`,
           btn: [
             {
-              val: `Oui, sur le même sujet.`,
+              val: `Oui, ça m'amuse.`,
               go: `id13`
-            },
-            {
-              val: `Oui, mais sur un autre sujet.`,
-              go: `id12`
-            },
-            {
-              val: `non merci, ce sera tout.`,
-              go: `id11a`
-            }
-          ]
-        },
-        'id15b': {
-          txt: `<p class="uk-margin-remove-bottom">Une autre question ?</p>`,
-          btn: [
-            {
-              val: `Oui, sur le même sujet.`,
-              go: `id14`
-            },
-            {
-              val: `Oui, mais sur un autre sujet.`,
-              go: `id12`
-            },
-            {
-              val: `non merci, ce sera tout.`,
-              go: `id11a`
-            }
-          ]
-        },
-        'id15c': {
-          txt: `<p class="uk-margin-remove-bottom">Une autre question ?</p>`,
-          btn: [
-            {
-              val: `Oui, sur le même sujet.`,
-              go: `id16`
-            },
-            {
-              val: `Oui, mais sur un autre sujet.`,
-              go: `id12`
             },
             {
               val: `non merci, ce sera tout.`,
@@ -786,76 +802,221 @@ export default {
         },
         'id13y': {
           txt: `<p>J'ai participé à un projet transactionnel en Sitecore, de plus j'ai eu la formation "Sitecore® Web Experience Management eLearning"</p>
+                <p>Le stack technique étant Habitat + Unicorn + Gulp + Bootstrap</p>
                 <p class="uk-margin-remove-bottom">Enfin j'ai fais de la R&D avec JSS de Sitecore et VueJS</p>`,
           go: `id15`
         },
-        'id14': {
-          txt: `<p class="uk-margin-remove-bottom">Pas trop personnel j'espère!</p>`,
-          btn: [
-            {
-              val: `Quel est ton statut au Canada et en France ?`,
-              go: `id14a`
-            },
-            {
-              val: `Joues-tu aux jeux vidéo ?`,
-              go: `id14b`
-            },
-            {
-              val: `Do you speak english ?`,
-              go: `id14c`
-            },
-            {
-              val: `Où habites-tu ?`,
-              go: `id14d`
-            }
-          ]
+        'id13z': {
+          txt: `<p>Je ne sais pas si c'est un succès ou plutot une fierté, mais quand le site pour lequel tu as travaillé reçoit un prix c'est une belle récompense</p>
+                <p>Le site qui me vient à l'esprit est celui du <a href="https://www.fondsftq.com/fr-ca/particuliers" target="_blank">Fonds FTQ</a></p>
+                <p class="uk-margin-remove-bottom">Le projet ayant comme qualité d'avoir une superbe équipe, un client à l'écoute de l'équipe et d'être réellement Agile.</p>`,
+          go: `id15`
+        },
+        'id13aa': {
+          txt: `<p>...mmmh</p>
+                <p>Dans plusieurs projets, je pense avoir échoué dans le rôle d'avertir le client sur l'importance de rendre un site accessible pour les personnes en handicap.</p>
+                <p>Malheureusement, lors des décision des tâches prioritaires, ce point était souvent 'déscopé'.</p>
+                <p>Progressivement j'ai appris à lever le flag afin d'alerter le client sur les risques et les pertes qu'engendre un site non-accessible</p>
+                <p class="uk-margin-remove-bottom">Maintenant, si cela se réitère, je préfère créer une dette technique et le garder dans le board</p>`,
+          go: `id15`
+        },
+        'id13ab': {
+          txt: `<p>C'est un atout pour l'entreprise, je suis convaincu que cela permet de limiter le turnOver des employés</p>
+                <p>Toutefois il ne s'agit pas d'après moi d'une qualité que recherche un employé</p>
+                <p class="uk-margin-remove-bottom">Pour moi les priorités sont : Une équipe experte, des projets passionants d'un point de vue technique, un salaire attrayant et une conciliation vie personnelle et professionelle</p>`,
+          go: `id15`
+        },
+        'id13ac': {
+          txt: `<p>Oui, je l'utilise au quotidien</p>
+                <p>Pour être franc, GIT c'est comme notre cerveau, on utilise au quotidien que 10% de ses capacités</p>
+                <p class="uk-margin-remove-bottom">Et c'est pas plus mal.</p>`,
+          go: `id15`
+        },
+        'id13ad': {
+          txt: `<p>J'espère avoir enménagé dans un plus grand appartement</p>
+                <p>Ma grande commancera la pré-ado donc je risque d'avoir moins de cheveux hahaha</p>
+                <p class="uk-margin-remove-bottom">J'espère aussi avoir établi une belle confiance avec un réseau de collaborateurs</p>`,
+          go: `id15`
+        },
+        'id13ae': {
+          txt: `<p>J'ai travaillé dans de multiples environnements JAVA</p>
+                <p>Je ne suis pas particulièrement fan de cet environnement (je préfère .NET)</p>
+                <p>Je n'ai pas eu de bonne expérience avec JAVA qui à tendance à compiler la terre entière! hahaha</p>
+                <p class="uk-margin-remove-bottom">Toutefois j'avoue que d'un point de vue front-end, le templating Thymeleaf est pas mauvais</p>`,
+          go: `id15`
+        },
+        'id13af': {
+          txt: `<p class="uk-margin-remove-bottom">I can keep a conversation without difficulty, I have a good understanding in technical English, nevertheless my English is not fluent.`,
+          go: `id15`
+        },
+        'id13ag': {
+          txt: `<p>J'ai eu beaucoup de plaisir à travailler pour de grosses sociétés ayant les moyens financiers et humain pour faire naître leurs projets</p>
+                <p>C'est aussi très valorisant de travailler pour ce genre de société</p>
+                <p class="uk-margin-remove-bottom">Je suis également friand des sociétés souhaitant se diriger vers un stack technologique moderne</p>`,
+          go: `id15`
+        },
+        'id13ah': {
+          txt: `<p>Après mes études en Art et infographie (3D, web, print)</p>
+                <p>J'ai pris mon vol vers Montréal en 2009 puisque j'ai reçu un permis de travail d'un an</p>
+                <p class="uk-margin-remove-bottom">Dans un premier tant, offrant mes service de travailleur autonome (autoentrepreneur), j'ai réalisé plusieurs site en Joomla orienté SEO (dont le site d'une ambassage, un site de l'ONU...)</p>`,
+          go: `id13ai`
+        },
+        'id13ai': {
+          txt: `<p class="uk-margin-remove-bottom">de <b>2009 à 2012</b> j'ai été embauché pour la première fois en tant que Webmaster, j'ai participé à la réalisation de plus d'une trentaine de projets (Joomla, Wordpress ou sites statiques)</p>`,
+          go: `id13aj`
+        },
+        'id13aj': {
+          txt: `<p class="uk-margin-remove-bottom">de <b>2012 à 2013</b> je suis rentré en France le temps d'avoir un permis de travail valide pour revenir au Canada. <br> J'ai pris le poste à Annecy de "Chef de projet web". Ce fut très enrichissant, toutefois, coder me manquait...</p>`,
+          go: `id13ak`
+        },
+        'id13ak': {
+          txt: `<p class="uk-margin-remove-bottom">de <b>2013 à 2017</b> j'ai rejoint une superbe agence : TINK, j'en garde de très bon souvenirs et de très bons amis. J'ai muris techniquement au sein de cette agence jusqu'au titre de développeur front-end Senior. <br> L'environnement de travail étant principalement JAVA et PHP, j'ai travaillé sur de nombreux CMS (Drupal, Wordpress, Orchard, Liferay... ). </p> `,
+          go: `id13al`
+        },
+        'id13al': {
+          txt: `<p class="uk-margin-remove-bottom">de <b>2017 à 2018</b> j'ai quitté Tink pour NEXIO afin d'obtenir un 4jrs / semaines et de devenir "Team Lead front-end", j'ai eu la chance de découvrir un CMS très puissant : Sitecore</p>`,
+          go: `id13am`
+        },
+        'id13am': {
+          txt: `<p>de <b>2018 à aujourd'hui</b>, ma famille et moi même sommes retourné nous installer en France en juillet 2018 dans le but de se rapprocher des grands-parents de nos filles.</p>
+                <p class="uk-margin-remove-bottom">Je suis freelance en France depuis décembre 2018 :)</p>`,
+          go: `id15`
+        },
+        'id13an': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id13ao': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id13ap': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id13aq': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id13ar': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id13as': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id13at': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
         },
         'id14a': {
           txt: `<p class="uk-margin-remove-bottom">Je suis franco-canadien :) Toutefois, après 10 années au Canada, ma famille et moi-même sommes retournées nous installer en France, proche de Lyon.</p>`,
-          go: `id15b`
+          go: `id15`
         },
         'id14b': {
           txt: `<p class="uk-margin-remove-bottom">Je suis papa de deux filles depuis 2015, c'est à cette date que mon expérience avec les jeux vidéo a pris fin.</p>`,
-          go: `id15b`
+          go: `id15`
         },
         'id14c': {
-          txt: `<p class="uk-margin-remove-bottom">I can keep a conversation without difficulty nevertheless my english is not fluent.</p>`,
-          go: `id15b`
+          txt: `<p class="uk-margin-remove-bottom">I can keep a conversation without difficulty, I have a good understanding in technical English, nevertheless my English is not fluent.</p>`,
+          go: `id15`
         },
         'id14d': {
           txt: `<p class="uk-margin-remove-bottom">Actuellement à Neuville-sur-Saône, proche de Lyon</p>`,
-          go: `id15b`
+          go: `id15`
         },
-        'id16': {
-          txt: `<p class="uk-margin-remove-bottom">🧐 humm, enfin un peu de serieux</p>`,
-          btn: [
-            {
-              val: `Freelance Vs CDI ?`,
-              go: `id16a`
-            },
-            {
-              val: `Télètravail ?`,
-              go: `id16b`
-            },
-            {
-              val: `TJM négociable ?`,
-              go: `id16c`
-            }
-          ]
+        'id14e': {
+          txt: `<p class="uk-margin-remove-bottom">Pas pire merci</p>`,
+          go: `id15`
+        },
+        'id14f': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id14g': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id14h': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
         },
         'id16a': {
           txt: `<p class="uk-margin-remove-bottom">J'ai 10 ans d'experiences en CDI, il est temps pour moi de tenter le freelance. Pour le moment je garde le cap!</p>`,
-          go: `id15c`
+          go: `id15`
         },
         'id16b': {
           txt: `<a>Hey!, j'ai dédié <a href="https://www.thomas-desfossez.com/#/remote" target="_blank" >une page à ce sujet</a></p>
                 <p class="uk-margin-remove-bottom">Néanmoins, sachez que je peux accepter un déplacement au besoin chez le client.</p>`,
-          go: `id15c`
+          go: `id15`
         },
         'id16c': {
           txt: `<p class="uk-margin-remove-bottom">Totalement! Suivant les conditions de travail, si j'aime le projet, si celui-ci est sur plusieurs mois...</p>`,
-          go: `id15c`
-        }
+          go: `id15`
+        },
+        'id16d': {
+          txt: `<p class="uk-margin-remove-bottom">Mon TJM est de 600€ HT (négociable)</p>`,
+          go: `id15`
+        },
+        'id16e': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id16f': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id16g': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
+        'id16h': {
+          txt: `<p>XXXXX</p>
+                <p>XXXXX</p>
+                <p>XXXXX</p>
+                <p class="uk-margin-remove-bottom">XXXXX</p>`,
+          go: `id15`
+        },
       }
     }
   },
