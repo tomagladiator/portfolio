@@ -235,12 +235,14 @@ export default {
     emitNext (event) {
       this.disabled = true
 
-      let userText = event.target.outerText // "ALLONS-Y!"
+      let userText = event.target.innerText // "ALLONS-Y!"
       let goToID = event.target.value // "id102"
 
       if (UIkit.dropdown(`#${this.uniqueId}`)) {
         UIkit.dropdown(`#${this.uniqueId}`).$destroy(true)
       }
+
+      console.log(3, event)
 
       EventBus.$emit('userFeedback', userText)
 
