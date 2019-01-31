@@ -554,7 +554,7 @@ export default {
               go: `id13g`
             },
             {
-              val: `Comment optimise-tu les performances de tes pages web (assets/ressources) ?`,
+              val: `Comment optimises-tu les performances de tes pages web (assets/ressources) ?`,
               go: `id13h`
             },
             {
@@ -594,11 +594,11 @@ export default {
               go: `id13q`
             },
             {
-              val: `As-tu de l'expérience avec vue ?`,
+              val: `As-tu de l'expérience avec Vue ?`,
               go: `id13r`
             },
             {
-              val: `Quel est ton expérience avec des frameworks JS / Javascript ?`,
+              val: `Quelle est ton expérience avec des frameworks JS / Javascript ?`,
               go: `id13s`
             },
             {
@@ -606,15 +606,15 @@ export default {
               go: `id13t`
             },
             {
-              val: `Quel est ton expérience avec Bootstrap ?`,
+              val: `Quelle est ton expérience avec Bootstrap ?`,
               go: `id13u`
             },
             {
-              val: `As-tu déja fais des Progressives Web App ?`,
+              val: `As-tu déjà fais des Progressives Web App ?`,
               go: `id13v`
             },
             {
-              val: `Quel est ton expérience en matièere d'accéssibilité ?`,
+              val: `Quelle est ton expérience en matière d'accessibilité ?`,
               go: `id13w`
             },
             {
@@ -622,7 +622,7 @@ export default {
               go: `id13x`
             },
             {
-              val: `Quel est ton expérience avec le CMS Sitecore ?`,
+              val: `Quelle est ton expérience avec le CMS Sitecore ?`,
               go: `id13y`
             },
             {
@@ -630,11 +630,11 @@ export default {
               go: `id13z`
             },
             {
-              val: `Quel est ton plus gros echec ? et qu'as-tu appris ?`,
+              val: `Quel est ton plus gros échec ? et qu'as-tu appris ?`,
               go: `id13aa`
             },
             {
-              val: `Que pensez-vous de la culture de l'entreprise ?`,
+              val: `Que penses-tu de la culture de l'entreprise ?`,
               go: `id13ab`
             },
             {
@@ -642,11 +642,11 @@ export default {
               go: `id13ac`
             },
             {
-              val: `Ou te vois-tu dans 5 ans ?`,
+              val: `Où te vois-tu dans 5 ans ?`,
               go: `id13ad`
             },
             {
-              val: `Quel est ton expérience avec JAVA ?`,
+              val: `Quelle est ton expérience avec JAVA ?`,
               go: `id13ae`
             },
             {
@@ -690,7 +690,7 @@ export default {
               go: `id16a`
             },
             {
-              val: `Pourquoi le télètravail ?`,
+              val: `Pourquoi le télétravail ?`,
               go: `id16b`
             },
             {
@@ -702,7 +702,7 @@ export default {
               go: `id16d`
             },
             { 
-              val: `Quel sont tes disponibilités ?`,
+              val: `Quelles sont tes disponibilités ?`,
               go: `id16e`
             },
             { 
@@ -710,11 +710,11 @@ export default {
               go: `id17a`
             },
             { 
-              val: `Comment expliqueriez-vous le métier de consultant à un enfant de 4 à 6 ans ?`,
+              val: `Comment expliquerais-tu le métier de consultant à un enfant de 4 à 6 ans ?`,
               go: `id17b`
             },
             { 
-              val: `Que feriez-vous avec 200 000€ ?`,
+              val: `Que ferais-tu avec 200 000€ ?`,
               go: `id17c`
             }
           ]
@@ -741,11 +741,11 @@ export default {
           go: `id15`
         },
         'id13c': {
-          txt: `<p class="uk-margin-remove-bottom">J'ai mis en place des outils pour rendre un site : Progressive Web App, c'est-à- dire qu'il sera perçu par les navigateurs comme une application potentielle et donc pouvant être installé, pouvant être visible off-line et pouvant même envoyer des notifications sur le téléphone par exemple ! J'ai fait pas mal de R&D avant de trouver les meilleures pratiques et j'ai appliqué la solution sur mon portfolio également.</p>`,
+          txt: `<p class="uk-margin-remove-bottom">J'ai mis en place des outils pour rendre un site Progressive Web App, c'est-à- dire qu'il sera perçu par les navigateurs comme une application potentielle et donc pouvant être installée, pouvant être visible off-line et pouvant même envoyer des notifications sur le téléphone par exemple ! J'ai fait pas mal de R&D avant de trouver les meilleures pratiques et j'ai appliqué la solution sur mon portfolio également.</p>`,
           go: `id15`
         },
         'id13d': {
-          txt: `<p class="uk-margin-remove-bottom">Une bonne pratique consiste a concevoir une architecture modulaire. De plus, je ne développe plus de site sans Styleguide. Travailler en méthode Agile avec une équipe experte en UI, UX, SEO... permet de livrer un produit solide ! Je n'ai pas peur de remettre en cause le travail de l'UX et de l'UI si cela permet de garantir un site stable.</p>`,
+          txt: `<p class="uk-margin-remove-bottom">Une bonne pratique consiste à concevoir une architecture modulaire. De plus, je ne développe plus de site sans Styleguide. Travailler en méthode Agile avec une équipe experte en UI, UX, SEO... permet de livrer un produit solide ! Je n'ai pas peur de remettre en cause le travail de l'UX et de l'UI si cela permet de garantir un site stable.</p>`,
           go: `id15`
         },
         'id13e': {
@@ -757,12 +757,12 @@ export default {
           go: `id15`
         },
         'id13g': {
-          txt: `<p class="uk-margin-remove-bottom">Pas facile d'avoir une réponse courte. Disons qu'une fois l'UX et le UI validé (par le client et les dev) je découpe les composants et intègre ceux-ci dans la styleguide en créant un fichier Scss et Js séparé par composant. par la suite, je test l'accessibilité et fais un pré-qa avant le pousser mon code.</p>`,
+          txt: `<p class="uk-margin-remove-bottom">Pas facile d'avoir une réponse courte. Disons qu'une fois l'UX et le UI validés (par le client et les dev) je découpe les composants et intègre ceux-ci dans la styleguide en créant un fichier Scss et Js séparé par composant. par la suite, je test l'accessibilité et fais un pré-qa avant de pousser mon code.</p>`,
           go: `id15`
         },
         'id13h': {
-          txt: `<p class="uk-margin-remove-bottom">En utilisant la puissance de l'outil Gulp, pour minifier et concaténer les fichiers. Aussi je m'emploi a utiliser de bonnes pratique dans le code pour réduire la taille des CSS à la source, je n'ai pas peur de mettre les mains dans le code généré pour détecter les éléments trop gourmands et faire du ménage.<br>
-                J'optimise les images et intègre préconise le SVG. </p>`,
+          txt: `<p class="uk-margin-remove-bottom">En utilisant la puissance de l'outil Gulp, pour minifier et concaténer les fichiers. Aussi je m'emploie à utiliser de bonnes pratiques dans le code pour réduire la taille des CSS à la source, je n'ai pas peur de mettre les mains dans le code généré pour détecter les éléments trop gourmands et faire du ménage.<br>
+                J'optimise les images et préconise le SVG. </p>`,
           go: `id15`
         },
         'id13i': {
@@ -792,7 +792,7 @@ export default {
           go: `id15`
         },
         'id13o': {
-          txt: `<p class="uk-margin-remove-bottom">Vraiment bonne, je forme mon équipe a cette technologie et utilise le SCSS à tous mes projets suivant l'atomic design.</p>`,
+          txt: `<p class="uk-margin-remove-bottom">Vraiment bonne, j'ai formé des équipes à cette technologie et utilise le SCSS à tous mes projets suivant l'Atomic Design.</p>`,
           go: `id15`
         },
         'id13p': {
@@ -840,7 +840,7 @@ export default {
           go: `id15`
         },
         'id13z': {
-          txt: `<p>Je ne sais pas si c'est un succès ou plutot une fierté, mais quand le site pour lequel tu as travaillé reçoit un prix c'est une belle récompense</p>
+          txt: `<p>Je ne sais pas si c'est un succès ou plutôt une fierté, mais quand le site pour lequel tu as travaillé reçoit un prix c'est une belle récompense</p>
                 <p>Le site qui me vient à l'esprit est celui du <a href="https://www.fondsftq.com/fr-ca/particuliers" target="_blank">Fonds FTQ</a></p>
                 <p class="uk-margin-remove-bottom">Le projet ayant comme qualité d'avoir une superbe équipe, un client à l'écoute de l'équipe et d'être réellement Agile.</p>`,
           go: `id15`
@@ -861,20 +861,20 @@ export default {
         },
         'id13ac': {
           txt: `<p>Oui, je l'utilise au quotidien</p>
-                <p>Pour être franc, GIT c'est comme notre cerveau, on utilise au quotidien que 10% de ses capacités</p>
-                <p class="uk-margin-remove-bottom">Et c'est pas plus mal.</p>`,
+                <p>Pour être franc, GIT c'est comme notre cerveau, on n'utilise au quotidien que 10% de ses capacités</p>
+                <p class="uk-margin-remove-bottom">Et ce n'est pas plus mal.</p>`,
           go: `id15`
         },
         'id13ad': {
-          txt: `<p>J'espère avoir enménagé dans un plus grand appartement</p>
-                <p>Ma grande commancera la pré-ado donc je risque d'avoir moins de cheveux hahaha</p>
+          txt: `<p>J'espère avoir emménagé dans un plus grand appartement</p>
+                <p>Ma grande commencera la pré-ado donc je risque d'avoir moins de cheveux hahaha</p>
                 <p class="uk-margin-remove-bottom">J'espère aussi avoir établi une belle confiance avec un réseau de collaborateurs</p>`,
           go: `id15`
         },
         'id13ae': {
           txt: `<p>J'ai travaillé dans de multiples environnements JAVA</p>
                 <p>Je ne suis pas particulièrement fan de cet environnement (je préfère .NET)</p>
-                <p>Je n'ai pas eu de bonne expérience avec JAVA qui à tendance à compiler la terre entière! hahaha</p>
+                <p>Je n'ai pas eu de bonnes expériences avec JAVA qui à tendance à compiler la terre entière! hahaha</p>
                 <p class="uk-margin-remove-bottom">Toutefois j'avoue que d'un point de vue front-end, le templating Thymeleaf est pas mauvais</p>`,
           go: `id15`
         },
@@ -883,7 +883,7 @@ export default {
           go: `id15`
         },
         'id13ag': {
-          txt: `<p>J'ai eu beaucoup de plaisir à travailler pour de grosses sociétés ayant les moyens financiers et humain pour faire naître leurs projets</p>
+          txt: `<p>J'ai eu beaucoup de plaisir à travailler pour de grosses sociétés ayant les moyens financiers et humains pour faire naître leurs projets</p>
                 <p>C'est aussi très valorisant de travailler pour ce genre de société</p>
                 <p class="uk-margin-remove-bottom">Je suis également friand des sociétés souhaitant se diriger vers un stack technologique moderne</p>`,
           go: `id15`
@@ -891,7 +891,7 @@ export default {
         'id13ah': {
           txt: `<p>Après mes études en Art et infographie (3D, web, print)</p>
                 <p>J'ai pris mon vol vers Montréal en 2009 puisque j'ai reçu un permis de travail d'un an</p>
-                <p class="uk-margin-remove-bottom">Dans un premier tant, offrant mes service de travailleur autonome (autoentrepreneur), j'ai réalisé plusieurs site en Joomla orienté SEO (dont le site d'une ambassage, un site de l'ONU...)</p>`,
+                <p class="uk-margin-remove-bottom">Dans un premier tant, offrant mes service de travailleur autonome (autoentrepreneur), j'ai réalisé plusieurs site en Joomla orienté SEO (dont le site d'une ambassade, un site de l'ONU...)</p>`,
           go: `id13ai`
         },
         'id13ai': {
@@ -903,15 +903,15 @@ export default {
           go: `id13ak`
         },
         'id13ak': {
-          txt: `<p class="uk-margin-remove-bottom">de <b>2013 à 2017</b> j'ai rejoint une superbe agence : TINK, j'en garde de très bon souvenirs et de très bons amis. J'ai muris techniquement au sein de cette agence jusqu'au titre de développeur front-end Senior. <br> L'environnement de travail étant principalement JAVA et PHP, j'ai travaillé sur de nombreux CMS (Drupal, Wordpress, Orchard, Liferay... ). </p> `,
+          txt: `<p class="uk-margin-remove-bottom">de <b>2013 à 2017</b> j'ai rejoint une superbe agence : TINK, j'en garde de très bons souvenirs et de très bons amis. J'ai mûri techniquement au sein de cette agence jusqu'au titre de développeur front-end Senior. <br> L'environnement de travail étant principalement JAVA et PHP, j'ai travaillé sur de nombreux CMS (Drupal, Wordpress, Orchard, Liferay... ). </p> `,
           go: `id13al`
         },
         'id13al': {
-          txt: `<p class="uk-margin-remove-bottom">de <b>2017 à 2018</b> j'ai quitté Tink pour NEXIO afin d'obtenir un 4jrs / semaines et de devenir "Team Lead front-end", j'ai eu la chance de découvrir un CMS très puissant : Sitecore</p>`,
+          txt: `<p class="uk-margin-remove-bottom">de <b>2017 à 2018</b> j'ai quitté Tink pour NEXIO afin d'obtenir un 4jrs / semaine et de devenir "Team Lead front-end", j'ai eu la chance de découvrir un CMS très puissant : Sitecore</p>`,
           go: `id13am`
         },
         'id13am': {
-          txt: `<p>de <b>2018 à aujourd'hui</b>, ma famille et moi même sommes retourné nous installer en France en juillet 2018 dans le but de se rapprocher des grands-parents de nos filles.</p>
+          txt: `<p>de <b>2018 à aujourd'hui</b>, ma famille et moi même sommes retournés nous installer en France en juillet 2018 dans le but de se rapprocher des grands-parents de nos filles.</p>
                 <p class="uk-margin-remove-bottom">Je suis freelance en France depuis décembre 2018 :)</p>`,
           go: `id15`
         },
@@ -965,7 +965,7 @@ export default {
           go: `id15`
         },
         'id14a': {
-          txt: `<p class="uk-margin-remove-bottom">Je suis franco-canadien :) Toutefois, après 10 années au Canada, ma famille et moi-même sommes retournées nous installer en France, proche de Lyon.</p>`,
+          txt: `<p class="uk-margin-remove-bottom">Je suis franco-canadien :) Toutefois, après 10 années au Canada, ma famille et moi-même sommes retournés nous installer en France, proche de Lyon.</p>`,
           go: `id15`
         },
         'id14b': {
@@ -986,7 +986,7 @@ export default {
         },
         'id14f': {
           txt: `<p>J'aime les jeux de plateaux</p>
-                <p>Au point ou j'organise un évènement mensuel dans ma ville</p>
+                <p>Au point où j'organise un événement mensuel dans ma ville</p>
                 <p>J'ai même fait un petit site <a href="https://neuville-sur-board.space/" target="_blank">neuville-sur-board</a> (oui il ressemble à mon site hahaha)</p>
                 <p class="uk-margin-remove-bottom">Inscris-toi!</p>`,
           go: `id15`
@@ -1006,12 +1006,12 @@ export default {
           go: `id15`
         },
         'id16a': {
-          txt: `<p class="uk-margin-remove-bottom">J'ai 10 ans d'experiences en CDI, il est temps pour moi de tenter le freelance. Pour le moment je garde le cap!</p>`,
+          txt: `<p class="uk-margin-remove-bottom">J'ai 10 ans d'expériences en CDI, il est temps pour moi de tenter le freelance. Pour le moment je garde le cap!</p>`,
           go: `id15`
         },
         'id16b': {
           txt: `<a>Hey!, j'ai dédié <a href="https://www.thomas-desfossez.com/#/remote" target="_blank" >une page à ce sujet</a></p>
-                <p class="uk-margin-remove-bottom">Néanmoins, sachez que je peux accepter un déplacement au besoin chez le client.</p>`,
+                <p class="uk-margin-remove-bottom">Néanmoins, sache que je peux accepter un déplacement au besoin chez le client.</p>`,
           go: `id15`
         },
         'id16c': {
@@ -1024,7 +1024,7 @@ export default {
         },
         'id16e': {
           txt: `<p>Je suis disponible en ce moment pour du 4 jours/semaine</p>
-                <p class="uk-margin-remove-bottom">(Le mercredi, c'est le jour ou je garde mes filles)</p>`,
+                <p class="uk-margin-remove-bottom">(Le mercredi, c'est le jour où je garde mes filles)</p>`,
           go: `id15`
         },
         'id16f': {
@@ -1057,9 +1057,9 @@ export default {
                   Soit (7 * 7 * 7)
                 </p>
                 <p>
-                  Al peut naitre un des 7 jours <br>
-                  Bob peut naitre un des 6 jours restant <br>
-                  Clovis peut naitre un des 5 jours restant <br>
+                  Al peut naître un des 7 jours <br>
+                  Bob peut naître un des 6 jours restant <br>
+                  Clovis peut naître un des 5 jours restant <br>
                   Soit (7 * 6 * 5)
                 </p>
                 <p>
@@ -1074,18 +1074,18 @@ export default {
           go: `id15`
         },
         'id17b': {
-          txt: `<p>Comme ma définition sera totallement différente entre un enfant de 4 et un autre de 6 ans, je vais faire pour 5 ans:</p>
+          txt: `<p>Comme ma définition sera totalement différente entre un enfant de 4 et un autre de 6 ans, je vais faire pour 5 ans:</p>
                 <p>"Tu aimes les croissants Marilou ?</p>
-                <p>Imagine que le boulanger tombe malade ou qu'il part longtemps en vacance!! Qui va te faire de bons croissants ??? </p>
+                <p>Imagine que le boulanger tombe malade ou qu'il parte longtemps en vacances!! Qui va te faire de bons croissants ??? </p>
                 <p>Vois--tu, un consultant, c'est une personne qui accepte de remplacer ce boulanger.</p>
                 <p>Il accepte de travailler foOort pour le remplacer et de se déplacer de loin de chez lui parfois...</p>
-                <p class="uk-margin-remove-bottom">Il y a des consultants pour les boulangers, mais aussi pour pleins d'autres métiers.
+                <p class="uk-margin-remove-bottom">Il y a des consultants pour les boulangers, mais aussi pour plein d'autres métiers.
                 <br>Tu as compris Marilou?"</p>`,
           go: `id15`
         },
         'id17c': {
           txt: `<p>Désolé cher Thomas de 8 ans que j'étais, je n'utiliserai pas cette somme pour un voyage dans l'espace 👨‍🚀 ...</p>
-                <p class="uk-margin-remove-bottom">Ça nous permettra de ne pas negocier un prêt avec la banque pour l'achat de notre nouvel appartement</p>`,
+                <p class="uk-margin-remove-bottom">Ça nous permettra de ne pas négocier un prêt avec la banque pour l'achat de notre nouvel appartement</p>`,
           go: `id15`
         },
       }
