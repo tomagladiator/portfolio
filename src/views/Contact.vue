@@ -9,8 +9,38 @@
           </p>
 
           <p>
-            Pour tout autre demande, ou pour m'envoyer vos photos de vacances, voici mon courriel : <a href="mailto:constraintsolver@gmail.com">constraintsolver@gmail.com</a>
+            Par la suite:
           </p>
+
+          <form method="POST" action="https://formspree.io/constraintsolver@gmail.com">
+            <fieldset class="uk-fieldset">
+              <div class="uk-margin">
+                <input
+                  type        ="email"
+                  name        ="email"
+                  placeholder ="L'email"
+                  class       ="uk-input"
+                  required
+                >
+              </div>
+
+              <div class="uk-margin">
+                <textarea
+                  name        ="message"
+                  placeholder ="Le Message"
+                  class       ="uk-textarea"
+                  required
+                >
+                </textarea>
+              </div>
+
+              <button
+                type="submit"
+                class ="uk-button uk-button-primary">
+                Pfiuuu
+              </button>
+            </fieldset>
+          </form>
 
       </div>
     </div>
