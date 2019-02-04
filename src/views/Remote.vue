@@ -77,7 +77,7 @@
 
 <script>
 export default {
-  name: 'thanks',
+  name: 'remote',
   metaInfo: {
     title: 'Pourquoi le télétravail ?'
   }

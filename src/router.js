@@ -53,6 +53,11 @@ export default new Router({
       path: '/remote',
       name: 'remote',
       component: () => import('./views/Remote.vue')
+    },
+    {
+      path: '/negociator',
+      name: 'negociator',
+      component: () => import('./views/Negociator.vue')
     }
   ]
 })
