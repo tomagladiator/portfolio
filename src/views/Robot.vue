@@ -1077,8 +1077,8 @@ export default {
           txt: `<p>Comme ma définition sera totalement différente entre un enfant de 4 et un autre de 6 ans, je vais faire pour 5 ans:</p>
                 <p>"Tu aimes les croissants Marilou ?</p>
                 <p>Imagine que le boulanger tombe malade ou qu'il parte longtemps en vacances!! Qui va te faire de bons croissants ??? </p>
-                <p>Vois--tu, un consultant, c'est une personne qui accepte de remplacer ce boulanger.</p>
-                <p>Il accepte de travailler foOort pour le remplacer et de se déplacer de loin de chez lui parfois...</p>
+                <p>Vois-tu, un consultant, c'est une personne qui accepte de remplacer ce boulanger.</p>
+                <p>Il accepte de travailler foOort pour le remplacer et de se déplacer loin de chez lui parfois...</p>
                 <p class="uk-margin-remove-bottom">Il y a des consultants pour les boulangers, mais aussi pour plein d'autres métiers.
                 <br>Tu as compris Marilou?"</p>`,
           go: `id15`
