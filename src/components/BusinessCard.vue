@@ -31,8 +31,8 @@
                 <p style="line-height: 3rem;">
                     <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
                     Me voilà disponible pour une mission de 4 jours / semaine, mercredi off (papa garde les filles). <br>
-                    En <router-link to="/remote">télétravail</router-link> avec possibilité si besoin de déplacement 1 jour semaine ( Proche de Lyon ). <br>
-                    Mon taux journalier est de 600€ HT
+                    En <router-link to="/remote" uk-tooltip="Pourquoi le télétravail">télétravail</router-link> avec possibilité si besoin de déplacement 2 jours/semaine ( Proche de Lyon ). <br>
+                    Mon taux journalier est de <router-link to="/negociator" uk-tooltip="Négocier mon TJM"><AnimatedNumber :number="540"></AnimatedNumber>€ HT</router-link>
                 </p>
 
                 <footer>
@@ -73,12 +73,14 @@
 
 <script>
 import { VueTyper } from 'vue-typer'
+import AnimatedNumber from '@/components/AnimatedNumber.vue'
 
 export default {
   name: 'BusinessCard',
 
   components: {
-    VueTyper
+    VueTyper,
+    AnimatedNumber
   },
 
   methods: {

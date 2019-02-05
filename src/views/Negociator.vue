@@ -11,10 +11,10 @@
         </h2>
 
         <p>
-          Hey Thomas! tu auras la chance de travailler sur un projet d'une durée 
-          <button 
-            class="uk-button uk-button-default uk-button-small uk-text-lowercase" 
-            type="button" 
+          Hey Thomas! tu auras la chance de travailler sur un projet d'une durée
+          <button
+            class="uk-button uk-button-default uk-button-small uk-text-lowercase"
+            type="button"
             @click="durationIsOpen = !durationIsOpen"
             v-html="duration"
           /> !
@@ -32,10 +32,10 @@
         >
 
         <p>
-          Aussi, avec ce projet, sachant que tu ne travailles pas les mercredi, tu pourras travailler en remote 
-          <button 
-            class="uk-button uk-button-default uk-button-small uk-text-lowercase" 
-            type="button" 
+          Aussi, avec ce projet, sachant que tu ne travailles pas les mercredi, tu pourras travailler en remote
+          <button
+            class="uk-button uk-button-default uk-button-small uk-text-lowercase"
+            type="button"
             @click="remoteIsOpen = !remoteIsOpen"
             v-html="remote"
           /> par semaine!
@@ -54,12 +54,12 @@
 
         <p>
           Mais ce qui nous rend irresistible c'est le stack technologique que tu vas utiliser comme
-          <button 
-            class="uk-button uk-button-default uk-button-small" 
-            type="button" 
+          <button
+            class="uk-button uk-button-default uk-button-small"
+            type="button"
             @click="technosIsOpen = !technosIsOpen"
             v-if="technos.length !== 0"
-          > 
+          >
             <span v-for="tech in technos" :key="tech">
               <strong>{{tech}}</strong>,
             </span>
@@ -77,12 +77,12 @@
 
         <p>
          En plus cette mission est top car
-          <button 
-            class="uk-button uk-text-left uk-button-default uk-button-small uk-text-lowercase" 
-            type="button" 
+          <button
+            class="uk-button uk-text-left uk-button-default uk-button-small uk-text-lowercase"
+            type="button"
             @click="avantagesIsOpen = !avantagesIsOpen"
             v-if="avantages.length !== 0"
-          > 
+          >
             <span v-for="avantage in avantages" :key="avantage">
               <strong>{{avantage}}</strong>,
             </span>
@@ -104,7 +104,7 @@
 
                     <div>
                         <p class="uk-margin-remove">
-                          mmmh... suivant tout ces arguments, je peux te proposer <strong>{{tjm}}€</strong> par jour.
+                          mmmh... suivant tout ces arguments, je peux te proposer <strong>{{tjm}}€</strong> <span v-if="tjm === 400" class="uk-text-success"> (<i>Bravo, vous avez négocié le meilleur taux!</i>)</span> <span v-if="tjm === 840" class="uk-text-danger"> (<i>"Que trépasse si je faiblisse!"</i>)</span> par jour.
                         </p>
 
                         <p class="uk-text-small uk-margin-remove">
@@ -140,7 +140,9 @@ export default {
       durationIsOpen: false,
       remoteIsOpen: false,
       technosIsOpen: false,
-      avantagesIsOpen: false
+      avantagesIsOpen: false,
+      duration: `entre <strong>un et deux mois</strong>, pas mal non ?`,
+      remote: `<strong>trois jours</strong>`
     }
   },
 
@@ -149,11 +151,11 @@ export default {
       let result = 0
 
       if (this.avantages.includes(`C'est un nouveau projet / refonte!`)) {
-        result -= 50
+        result -= 20
       }
 
       if (this.avantages.includes(`C'est du support d'un site existant`)) {
-        result += 50
+        result += 20
       }
 
       if (this.avantages.includes(`C'est un client d'envergure`)) {
@@ -167,23 +169,23 @@ export default {
       let result = 0
 
       if (this.technos.includes('VueJs')) {
-        result -= 50
+        result -= 40
       }
 
       if (this.technos.includes('JavaScript')) {
         if (this.technos.includes('VueJs')) {
           result -= 0
         } else {
-          result -= 50
+          result -= 40
         }
       }
 
       if (this.technos.includes('React')) {
-        result += 50
+        result += 40
       }
 
       if (this.technos.includes('Angular')) {
-        result += 100
+        result += 80
       }
 
       if (this.technos.includes('Git')) {
@@ -195,12 +197,90 @@ export default {
       }
 
       this.calculTechnos = result
+    },
+
+    rangeValueRemote () {
+      let remote = ''
+
+      switch (this.rangeValueRemote) {
+        case '0': {
+          remote = `<strong>zéro jour</strong>`
+          this.calculRemote = 120
+          break
+        }
+        case '1': {
+          remote = `<strong>un jour</strong>`
+          this.calculRemote = 80
+          break
+        }
+        case '2': {
+          remote = `<strong>deux jours</strong>`
+          this.calculRemote = 40
+          break
+        }
+        case '3': {
+          remote = `<strong>trois jours</strong>`
+          this.calculRemote = 0
+          break
+        }
+        case '4': {
+          remote = `<strong>quatre jours</strong>`
+          this.calculRemote = -40
+          break
+        }
+        default: {
+          remote = `<strong>trois jours</strong>`
+          this.calculRemote = 0
+          break
+        }
+      }
+
+      this.remote = remote
+    },
+
+    rangeValueDuration () {
+      let duration = ''
+
+      switch (this.rangeValueDuration) {
+        case '0': {
+          duration = `de moins d'<strong>un mois</strong>...`
+          this.calculDuration = 40
+          break
+        }
+        case '1': {
+          duration = `entre <strong>un et deux mois</strong>, pas mal non ?`
+          this.calculDuration = 0
+          break
+        }
+        case '2': {
+          duration = `entre <strong>deux et trois mois</strong>.`
+          this.calculDuration = -40
+          break
+        }
+        case '3': {
+          duration = `entre <strong>trois et six mois</strong>!`
+          this.calculDuration = -80
+          break
+        }
+        case '4': {
+          duration = `de <strong>plus de 6 mois</strong>!! Malade!!`
+          this.calculDuration = -120
+          break
+        }
+        default: {
+          duration = `entre <strong>un et deux mois</strong>, pas mal non ?`
+          this.calculDuration = 0
+          break
+        }
+      }
+
+      this.duration = duration
     }
   },
 
   computed: {
     tjm () {
-      let newTJM = 600
+      let newTJM = 540
 
       newTJM += this.calculDuration
       newTJM += this.calculRemote
@@ -212,84 +292,6 @@ export default {
       }
 
       return newTJM
-    },
-
-    remote () {
-      let remote = ''
-
-      switch (this.rangeValueRemote) {
-        case '0': {
-          remote = `<strong>zéro jour</strong>`
-          this.calculRemote = 150
-          break
-        }
-        case '1': {
-          remote = `<strong>un jour</strong>`
-          this.calculRemote = 100
-          break
-        }
-        case '2': {
-          remote = `<strong>deux jours</strong>`
-          this.calculRemote = 50
-          break
-        }
-        case '3': {
-          remote = `<strong>trois jours</strong>`
-          this.calculRemote = 0
-          break
-        }
-        case '4': {
-          remote = `<strong>quatre jours</strong>`
-          this.calculRemote = -50
-          break
-        }
-        default: {
-          remote = `<strong>trois jours</strong>`
-          this.calculRemote = 0
-          break
-        }
-      }
-
-      return remote
-    },
-
-    duration () {
-      let duration = ''
-
-      switch (this.rangeValueDuration) {
-        case '0': {
-          duration = `de moins d'<strong>un mois</strong>...`
-          this.calculDuration =  50
-          break
-        }
-        case '1': {
-          duration = `entre <strong>un et deux mois</strong>, pas mal non ?`
-          this.calculDuration = 0
-          break
-        }
-        case '2': {
-          duration = `entre <strong>deux et trois mois</strong>.`
-          this.calculDuration = -50
-          break
-        }
-        case '3': {
-          duration = `entre <strong>trois et six mois</strong>!`
-          this.calculDuration = -100
-          break
-        }
-        case '4': {
-          duration = `de <strong>plus de 6 mois</strong>!! Malade!!`
-          this.calculDuration = -150
-          break
-        }
-        default: {
-          duration = `entre <strong>un et deux mois</strong>, pas mal non ?`
-          this.calculDuration = 0
-          break
-        }
-      }
-
-      return duration
     }
   },
 

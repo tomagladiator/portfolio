@@ -1019,7 +1019,7 @@ export default {
           go: `id15`
         },
         'id16d': {
-          txt: `<p class="uk-margin-remove-bottom">Mon TJM est de 600€ HT (<a href="https://www.thomas-desfossez.com/#/negociator" target="_blank" >négociable</a>)</p>`,
+          txt: `<p class="uk-margin-remove-bottom">Mon TJM est de 540€ HT (<a href="https://www.thomas-desfossez.com/#/negociator" target="_blank" >négociable</a>)</p>`,
           go: `id15`
         },
         'id16e': {
