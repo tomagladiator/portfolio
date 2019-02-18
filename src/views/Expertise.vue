@@ -108,6 +108,14 @@ export default {
 
       formations: [
         {
+          year: `2019`,
+          items: [
+            `Service Workies - Progressive Web App`,
+            `Frontend Developer Love Conference - Amsterdam, feb 13th`,
+            `VueJs Conference - Amsterdam, feb 14th & 15th 2019`
+          ]
+        },
+        {
           year: `2018`,
           items: [
             `Formation Développement Moderne javascript et ES6, ES7`,
