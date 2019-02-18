@@ -62,7 +62,7 @@
             </p>
 
             <p>
-                oldSchool? mon <a href="/thomas-desfossez-cv-2019.jpg" target="_blank">CV version 2019</a>
+                oldSchool? mon <a href="/thomas-desfossez-cv-2019-02.pdf" target="_blank">CV version 2019</a>
             </p>
 
             </div>

@@ -55,6 +55,12 @@ export default new Router({
       component: () => import('./views/Remote.vue')
     },
     {
+      path: '/cv',
+      name: 'cv',
+      component: () => import('./views/Cv.vue'),
+      props: { hideLayout: true }
+    },
+    {
       path: '/negociator',
       name: 'negociator',
       component: () => import('./views/Negociator.vue')

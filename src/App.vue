@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="toggle-menu" uk-offcanvas="overlay: true; flip: true; mode: push">
+    <div v-if="!isHidden" id="toggle-menu" uk-offcanvas="overlay: true; flip: true; mode: push">
       <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close ref="closeButton"></button>
 
@@ -46,7 +46,7 @@
       </div>
     </div>
 
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;animation: uk-animation-slide-top-small;show-on-up: true">
+    <div v-if="!isHidden" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;animation: uk-animation-slide-top-small;show-on-up: true">
       <div class="uk-container uk-container-expand uk-background-primary">
 
         <!-- NAVBAR -->
@@ -107,10 +107,10 @@
     </div>
 
     <main class="main-content">
-      <router-view/>
+      <router-view />
     </main>
 
-    <footer class="main-footer uk-grid-collapse uk-child-width-expand@s uk-text-center uk-background-primary" uk-grid>
+    <footer v-if="!isHidden" class="main-footer uk-grid-collapse uk-child-width-expand@s uk-text-center uk-background-primary" uk-grid>
       <div>
         <div class="uk-padding-small uk-light">Thomas Desfossez &copy; 2019</div>
       </div>
@@ -121,6 +121,7 @@
 <script>
 import UIkit from 'uikit'
 import Icons from 'uikit/dist/js/uikit-icons'
+import { EventBus } from './event-bus.js'
 
 UIkit.use(Icons)
 
@@ -130,10 +131,21 @@ export default {
     title: 'Thomas Desfossez - Freelance - Lead Front-End Senior sur Lyon',
     titleTemplate: '%s | Thomas Desfossez'
   },
+  data () {
+    return {
+      isHidden: false
+    }
+  },
   methods: {
     triggerClose () {
       this.$refs.closeButton.click()
     }
+  },
+
+  mounted () {
+    EventBus.$on('hideLayout', customMessage => {
+      this.isHidden = customMessage
+    })
   }
 }
 
