@@ -4,7 +4,13 @@
         <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto@m">
-                    <img alt="Thomas Desfossez" src="../assets/thomas-desfossez-2019.jpg" class="uk-border-circle" width="160" height="160">
+                    <div
+                      id="gl"
+                      data-imageOriginal="img/profil.jpg"
+                      data-imageDepth="img/profil-map.jpg"
+                      data-horizontalThreshold="35"
+                      data-verticalThreshold="15">
+                    </div>
                 </div>
 
                 <div class="uk-width-expand@m">
@@ -89,6 +95,13 @@ export default {
     }
   },
 
+  mounted () {
+    let fake3d = document.createElement('script')
+    fake3d.setAttribute('src', './js/app.js')
+    fake3d.setAttribute('type', 'module')
+    document.head.appendChild(fake3d)
+  },
+
   data () {
     return {
       myImage: '../assets/thomas-avatar.jpg',
@@ -104,5 +117,12 @@ export default {
   .typed {
     color: #666 !important
   }
+}
+
+.businessCard #gl {
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  overflow: hidden;
 }
 </style>
