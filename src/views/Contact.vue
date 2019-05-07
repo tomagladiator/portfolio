@@ -1,5 +1,5 @@
 <template>
-  <div class="contact">
+  <div class="page-contact">
     <div class="uk-container">
       <div class="uk-card uk-card-body">
           <h1>Un mot doux ?</h1>
@@ -55,3 +55,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.page-contact {
+  min-height: calc(100vh - 134px);
+}
+</style>

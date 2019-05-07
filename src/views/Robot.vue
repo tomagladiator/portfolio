@@ -1,5 +1,5 @@
 <template>
-  <div class="robot">
+  <div class="page-robot">
     <div class="uk-container uk-container">
         <div class="uk-card uk-card-small uk-card-body" ref="container">
           <template v-for="(child, i) in children">
@@ -468,7 +468,7 @@ export default {
           txt: `<p>Merveilleux ! </p>
                 <p>Nous avons presque fini ! 🎷</p>
                 <p>Je sous-entends ton souhait de connaitre mon taux journalier.</p>
-                <p>Je réalise vos missions à hauteur de 600 euros 💶 la journée. Facturé à la fin de chaque mois.</p>
+                <p>Je réalise vos missions à hauteur de 540 euros 💶 la journée. Facturé à la fin de chaque mois.</p>
                 <p>Ce TJM est <a href="https://www.thomas-desfossez.com/#/negociator" target="_blank" >négociable</a> suivant les conditions.</p>
                 <pclass="uk-margin-remove-bottom">Est-ce qu'on continue ?</p>`,
           btn: [
@@ -1118,3 +1118,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.page-robot {
+  min-height: calc(100vh - 134px);
+}
+</style>

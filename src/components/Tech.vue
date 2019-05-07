@@ -1,5 +1,5 @@
 <template>
-    <div class="tech" :class="injectedClass">
+    <div class="tech uk-margin-small-bottom uk-margin-small-top" :class="injectedClass">
         <div v-html="svg"></div>
     </div>
 </template>

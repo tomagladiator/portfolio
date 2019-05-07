@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="modeClassIs">
     <div v-if="!isHidden" id="toggle-menu" uk-offcanvas="overlay: true; flip: true; mode: push">
       <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close ref="closeButton"></button>
@@ -37,9 +37,15 @@
               </a>
             </li>
 
-            <li>
-              <a href="https://github.com/tomagladiator" target="_blank" title="Github"  v-on:click="triggerClose">
+            <li class="uk-margin-small-bottom" v-on:click="triggerClose">
+              <a href="https://github.com/tomagladiator" target="_blank" title="Github">
                 <span class="uk-margin-small-right uk-icon-button" uk-icon="icon: github" style="fill: white"></span> Github
+              </a>
+            </li>
+
+            <li v-on:click="triggerClose">
+              <a href="#" v-on:click="darkLight">
+                <span class="uk-margin-small-right uk-icon-button" uk-icon="icon: paint-bucket" style="fill: white"></span> Dark mode
               </a>
             </li>
         </ul>
@@ -98,6 +104,12 @@
                   <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: github"></span>
                 </a>
               </li>
+
+              <li>
+                <a href="#" v-on:click="darkLight" >
+                  <span uk-tooltip="Theme Dark/Light" class="uk-margin-small-right uk-icon-button" uk-icon="icon: paint-bucket"></span>
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
@@ -122,7 +134,6 @@
 import UIkit from 'uikit'
 import Icons from 'uikit/dist/js/uikit-icons'
 import { EventBus } from './event-bus.js'
-
 UIkit.use(Icons)
 
 export default {
@@ -133,12 +144,28 @@ export default {
   },
   data () {
     return {
-      isHidden: false
+      isHidden: false,
+      modeDarkLight: 'light'
+    }
+  },
+  computed: {
+    modeClassIs () {
+      if (this.modeDarkLight === 'dark') {
+        return 'dark uk-light'
+      } else {
+        return 'light uk-dark'
+      }
     }
   },
   methods: {
     triggerClose () {
       this.$refs.closeButton.click()
+    },
+
+    darkLight () {
+      this.modeDarkLight = this.modeDarkLight === 'light' ? 'dark' : 'light'
+      this.$cookie.delete('mode')
+      this.$cookie.set('mode', this.modeDarkLight, 10)
     }
   },
 
@@ -146,6 +173,10 @@ export default {
     EventBus.$on('hideLayout', customMessage => {
       this.isHidden = customMessage
     })
+
+    if (this.$cookie.get('mode') === 'dark') {
+      this.modeDarkLight = 'dark'
+    }
   }
 }
 
@@ -155,5 +186,43 @@ export default {
 @import "../node_modules/uikit/src/scss/mixins-theme.scss";
 @import "../node_modules/uikit/src/scss/variables-theme.scss";
 @import "../node_modules/uikit/src/scss/uikit-theme.scss";
+
+.dark {
+  background-color: #2d2d2d;
+
+  .uk-section-primary {
+    background-color: #053362;
+  }
+
+  .uk-background-primary {
+    background-color: #222;
+  }
+
+  .businessCard .vue-typer .typed {
+    color: #bababa !important;
+  }
+
+  .uk-card-default {
+    background-color: #222;
+    color: #fff;
+
+    div, p, span {
+      color: #bababa !important;
+      border-color: #525252 !important;
+    }
+
+    h1, h2, h3, h4 {
+      color: #fff;
+    }
+  }
+
+  div[style="background: rgb(240, 80, 110);"] {
+    background-color: #2d2d2d !important;
+  }
+
+  .chat .uk-card-default div {
+    color: #f1f1f1 !important;
+  }
+}
 
 </style>

@@ -4,13 +4,7 @@
         <div class="uk-card-header">
             <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto@m">
-                    <div
-                      id="gl"
-                      data-imageOriginal="img/profil.jpg"
-                      data-imageDepth="img/profil-map.jpg"
-                      data-horizontalThreshold="35"
-                      data-verticalThreshold="15">
-                    </div>
+                    <img id="gl" src="img/profil.jpg" alt="">
                 </div>
 
                 <div class="uk-width-expand@m">
@@ -34,8 +28,9 @@
             <hr class="uk-divider-icon">
 
             <blockquote cite="#" class="uk-text-center">
-                <p style="line-height: 3rem;">
-                    <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
+                <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
+
+                <p>
                     Me voilà disponible pour une mission de 4 jours / semaine, mercredi off (papa garde les filles). <br>
                     En <router-link to="/remote" uk-tooltip="Pourquoi le télétravail">télétravail</router-link> avec possibilité si besoin de déplacement 2 jours/semaine ( Proche de Lyon ). <br>
                     Mon taux journalier est de <router-link to="/negociator" uk-tooltip="Négocier mon TJM"><AnimatedNumber :number="540"></AnimatedNumber>€ HT</router-link>
@@ -44,8 +39,7 @@
                 <footer>
                     <cite>
                         Prenons le temps d’échanger autour d’un café/thé. <span style="font-style: normal;">☕</span>
-                        <span class="uk-icon uk-margin-small-left uk-icon-button" uk-icon="icon: quote-right; ratio: 2"></span
-                    ></cite>
+                    </cite>
                 </footer>
             </blockquote>
         </div>
@@ -96,16 +90,15 @@ export default {
   },
 
   mounted () {
-    let fake3d = document.createElement('script')
-    fake3d.setAttribute('src', './js/app.js')
-    fake3d.setAttribute('type', 'module')
-    document.head.appendChild(fake3d)
+    // let fake3d = document.createElement('script')
+    // fake3d.setAttribute('src', './js/app.js')
+    // fake3d.setAttribute('data-id', 'toto')
+    // fake3d.setAttribute('type', 'module')
+    // document.head.appendChild(fake3d)
   },
 
   data () {
     return {
-      myImage: '../assets/thomas-avatar.jpg',
-      otherImage: '../assets/thomas-desfossez-2019.jpg',
       bipBoop: 'Developer'
     }
   }
