@@ -9,7 +9,7 @@
 
           <Expertise
             v-for     =" (exp, i) in expertisesFiltered"
-            :key      ="'Expertise'+i"
+            :key      ="'Expertise'+exp.title+i"
             :title    ="exp.title"
             :text     ="exp.text"
             :progress ="exp.progress"
