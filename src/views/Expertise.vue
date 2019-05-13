@@ -7,6 +7,10 @@
             Mes compétences 2019
           </h1>
 
+          <p class="uk-margin-medium-bottom">
+            Jetez aussi un oeil à mes <router-link to="/realisations">réalisations !</router-link>
+          </p>
+
           <Expertise
             v-for     =" (exp, i) in expertisesFiltered"
             :key      ="'Expertise'+exp.title+i"
@@ -110,6 +114,7 @@ export default {
         {
           year: `2019`,
           items: [
+            `Build Your First  Vue.js App by Anthony Gore`,
             `Service Workies - Progressive Web App`,
             `Frontend Developer Love Conference - Amsterdam, feb 13th`,
             `VueJs Conference - Amsterdam, feb 14th & 15th 2019`

@@ -470,7 +470,7 @@ export default {
                 <p>Je sous-entends ton souhait de connaitre mon taux journalier.</p>
                 <p>Je réalise vos missions à hauteur de 540 euros 💶 la journée. Facturé à la fin de chaque mois.</p>
                 <p>Ce TJM est <a href="https://www.thomas-desfossez.com/#/negociator" target="_blank" >négociable</a> suivant les conditions.</p>
-                <pclass="uk-margin-remove-bottom">Est-ce qu'on continue ?</p>`,
+                <p class="uk-margin-remove-bottom">Est-ce qu'on continue ?</p>`,
           btn: [
             {
               val: `oui ! 👍`,

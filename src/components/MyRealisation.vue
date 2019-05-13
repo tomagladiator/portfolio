@@ -1,5 +1,5 @@
 <template>
-  <div class="my-realisation uk-margin-medium-bottom">
+  <div class="my-realisation uk-margin-medium-bottom" :data-tech="dataTech">
     <div class="uk-card uk-card-default">
         <div class="uk-card-media-top uk-overflow-hidden">
             <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover th-img" :class="injectedClass" :data-src="imgUrl" uk-img>
@@ -60,6 +60,7 @@ export default {
     descProject: String,
     agency: String,
     titleJob: String,
+    dataTech: String,
     hashtag: String
   },
 
