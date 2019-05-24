@@ -114,6 +114,7 @@ export default {
         {
           year: `2019`,
           items: [
+            `Vue JS 2 - The complete Guide (incl. Vue Router & Vuex) by Maximilian Schwarzmüller`,
             `Build Your First  Vue.js App by Anthony Gore`,
             `Service Workies - Progressive Web App`,
             `Frontend Developer Love Conference - Amsterdam, feb 13th`,
