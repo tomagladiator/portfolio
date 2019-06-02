@@ -468,8 +468,8 @@ export default {
           txt: `<p>Merveilleux ! </p>
                 <p>Nous avons presque fini ! 🎷</p>
                 <p>Je sous-entends ton souhait de connaitre mon taux journalier.</p>
-                <p>Je réalise vos missions à hauteur de 540 euros 💶 la journée. Facturé à la fin de chaque mois.</p>
-                <p>Ce TJM est <a href="https://www.thomas-desfossez.com/#/negociator" target="_blank" >négociable</a> suivant les conditions.</p>
+                <p>Je réalise vos missions à partir de 400 euros 💶 la journée. Facturé à la fin de chaque mois.</p>
+                <p>Mon TJM est <a href="https://www.thomas-desfossez.com/#/negociator" target="_blank" >négociable, voyez comment</a>.</p>
                 <p class="uk-margin-remove-bottom">Est-ce qu'on continue ?</p>`,
           btn: [
             {
@@ -1019,7 +1019,7 @@ export default {
           go: `id15`
         },
         'id16d': {
-          txt: `<p class="uk-margin-remove-bottom">Mon TJM est de 540€ HT (<a href="https://www.thomas-desfossez.com/#/negociator" target="_blank" >négociable</a>)</p>`,
+          txt: `<p class="uk-margin-remove-bottom">Mon TJM commence à 400€ HT suivant certaines conditions (<a href="https://www.thomas-desfossez.com/#/negociator" target="_blank" >Négocier le TJM</a>)</p>`,
           go: `id15`
         },
         'id16e': {

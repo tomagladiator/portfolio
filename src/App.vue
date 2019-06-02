@@ -94,14 +94,14 @@
               </li>
 
               <li class="uk-margin-left">
-                <a href="https://www.linkedin.com/in/tdesfossez" target="_blank" title="Linkedin">
-                  <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: linkedin"></span>
+                <a href="https://www.linkedin.com/in/tdesfossez" target="_blank">
+                  <span uk-tooltip="Linkedin" class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: linkedin"></span>
                 </a>
               </li>
 
               <li>
-                <a href="https://github.com/tomagladiator" target="_blank" title="Github">
-                  <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: github"></span>
+                <a href="https://github.com/tomagladiator" target="_blank">
+                  <span uk-tooltip="Github" class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: github"></span>
                 </a>
               </li>
 
