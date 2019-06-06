@@ -44,7 +44,7 @@
         <input
             class     ="uk-range uk-margin-bottom"
             type      ="range"
-            value     ="3"
+            value     ="4"
             min       ="0"
             max       ="4"
             step      ="1"
@@ -130,7 +130,7 @@ export default {
   data () {
     return {
       rangeValueDuration: 1,
-      rangeValueRemote: 3,
+      rangeValueRemote: 4,
       calculDuration: 0,
       calculRemote: 0,
       calculTechnos: 0,
@@ -142,7 +142,7 @@ export default {
       technosIsOpen: false,
       avantagesIsOpen: false,
       duration: `entre <strong>un et deux mois</strong>, pas mal non ?`,
-      remote: `<strong>trois jours</strong>`
+      remote: `<strong>quatre jours</strong>`
     }
   },
 
@@ -205,31 +205,31 @@ export default {
       switch (this.rangeValueRemote) {
         case '0': {
           remote = `<strong>zéro jour</strong>`
-          this.calculRemote = 120
+          this.calculRemote = 160
           break
         }
         case '1': {
           remote = `<strong>un jour</strong>`
-          this.calculRemote = 80
+          this.calculRemote = 120
           break
         }
         case '2': {
           remote = `<strong>deux jours</strong>`
-          this.calculRemote = 40
+          this.calculRemote = 80
           break
         }
         case '3': {
           remote = `<strong>trois jours</strong>`
-          this.calculRemote = 0
+          this.calculRemote = 40
           break
         }
         case '4': {
           remote = `<strong>quatre jours</strong>`
-          this.calculRemote = -40
+          this.calculRemote = 0
           break
         }
         default: {
-          remote = `<strong>trois jours</strong>`
+          remote = `<strong>quatre jours</strong>`
           this.calculRemote = 0
           break
         }
