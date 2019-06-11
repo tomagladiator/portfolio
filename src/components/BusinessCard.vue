@@ -31,12 +31,17 @@
                 <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
 
                 <p>
+                    Actuellement en mission sur un projet de feu ! <br>
+                    Promis, je vous tiendrai informés de mes disponibilités.
+                </p>
+
+                <p v-if="false">
                     Me voilà disponible pour une mission de 4 jours / semaine, mercredi off (papa garde les filles). <br>
                     En <router-link to="/remote" uk-tooltip="Pourquoi le télétravail">télétravail</router-link> avec possibilité si besoin de déplacement 2 jours/semaine ( Proche de Lyon ). <br>
                     Mon taux journalier à partir de <router-link to="/negociator" uk-tooltip="Négocier mon TJM"><AnimatedNumber :number="400"></AnimatedNumber>€ HT</router-link>
                 </p>
 
-                <footer>
+                <footer v-if="false">
                     <cite>
                         Prenons le temps d’échanger autour d’un café/thé. <span style="font-style: normal;">☕</span>
                     </cite>
