@@ -443,7 +443,7 @@ export default {
         'id05': {
           txt: `<p>Merci ${this.dataUser.name}.</p>
                 <p>Je voulais voir avec toi si je suis TON candidat.🤖</p>
-                <p>Vois-tu, je suis maintenant Freelance, je développe exclusivement en télétravail pour du 4jrs semaines (papa garde ses filles le mercredi). </p>
+                <p>Vois-tu, je suis maintenant Freelance, je développe exclusivement en télétravail pour du 4jrs semaines (papa garde ses filles le lundi matin et le mercredi après-midi). </p>
                 <p>Je peux toutefois me déplacer occasionnellement si nécessaire (🚌 Lyon, 🚊 Paris, 🚀 Montréal...). </p>
                 <p class="uk-margin-remove-bottom">Cela est-il correct pour toi ?</p>`,
           btn: [
