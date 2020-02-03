@@ -37,7 +37,7 @@
 
                 <p>
                     Me voilà disponible pour une mission de 4 jours / semaine, lundi matin et mercredi après-midi off (papa garde les filles). <br>
-                    En <router-link to="/remote" uk-tooltip="Pourquoi le télétravail">télétravail</router-link> avec possibilité si besoin de déplacement 2 jours/semaine ( Proche de Lyon ). <br>
+                    En <router-link to="/remote" uk-tooltip="Pourquoi le télétravail">télétravail</router-link> avec possibilité si besoin de déplacement 1 jour/semaine ( Proche de Lyon ). <br>
                     Mon taux journalier à partir de <router-link to="/negociator" uk-tooltip="Négocier mon TJM"><AnimatedNumber :number="400"></AnimatedNumber>€ HT</router-link>
                 </p>
 

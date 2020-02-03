@@ -32,7 +32,7 @@
         >
 
         <p>
-          Aussi, avec ce projet, sachant que tu ne travailles pas les mercredi, tu pourras travailler en remote
+          Aussi, avec ce projet, sachant que tu ne peux pas te déplacer les lundi et les mercredi, tu pourras travailler en remote
           <button
             class="uk-button uk-button-default uk-button-small uk-text-lowercase"
             type="button"
@@ -44,9 +44,9 @@
         <input
             class     ="uk-range uk-margin-bottom"
             type      ="range"
-            value     ="4"
-            min       ="0"
-            max       ="4"
+            value     ="5"
+            min       ="2"
+            max       ="5"
             step      ="1"
             v-model   ="rangeValueRemote"
             v-if      ="remoteIsOpen"
@@ -130,7 +130,7 @@ export default {
   data () {
     return {
       rangeValueDuration: 1,
-      rangeValueRemote: 4,
+      rangeValueRemote: 5,
       calculDuration: 0,
       calculRemote: 0,
       calculTechnos: 0,
@@ -142,7 +142,7 @@ export default {
       technosIsOpen: false,
       avantagesIsOpen: false,
       duration: `entre <strong>un et deux mois</strong>, pas mal non ?`,
-      remote: `<strong>quatre jours</strong>`
+      remote: `<strong>cinq jours</strong>`
     }
   },
 
@@ -203,33 +203,28 @@ export default {
       let remote = ''
 
       switch (this.rangeValueRemote) {
-        case '0': {
-          remote = `<strong>zéro jour</strong>`
-          this.calculRemote = 160
-          break
-        }
-        case '1': {
-          remote = `<strong>un jour</strong>`
-          this.calculRemote = 120
-          break
-        }
         case '2': {
           remote = `<strong>deux jours</strong>`
-          this.calculRemote = 80
+          this.calculRemote = 120
           break
         }
         case '3': {
           remote = `<strong>trois jours</strong>`
-          this.calculRemote = 40
+          this.calculRemote = 80
           break
         }
         case '4': {
           remote = `<strong>quatre jours</strong>`
+          this.calculRemote = 40
+          break
+        }
+        case '5': {
+          remote = `<strong>cinq jours</strong>`
           this.calculRemote = 0
           break
         }
         default: {
-          remote = `<strong>quatre jours</strong>`
+          remote = `<strong>cinq jours</strong>`
           this.calculRemote = 0
           break
         }

@@ -987,7 +987,7 @@ export default {
         'id14f': {
           txt: `<p>J'aime les jeux de plateaux</p>
                 <p>Au point où j'organise un événement mensuel dans ma ville</p>
-                <p>J'ai même fait un petit site <a href="https://neuville-sur-board.space/" target="_blank">neuville-sur-board</a> (oui il ressemble à mon site hahaha)</p>
+                <p>J'ai même fait un petit site <a href="https://neuville-sur-board.landen.co/" target="_blank">neuville-sur-board</a></p>
                 <p class="uk-margin-remove-bottom">Inscris-toi!</p>`,
           go: `id15`
         },
@@ -1006,7 +1006,7 @@ export default {
           go: `id15`
         },
         'id16a': {
-          txt: `<p class="uk-margin-remove-bottom">J'ai 10 ans d'expériences en CDI, il est temps pour moi de tenter le freelance. Pour le moment je garde le cap!</p>`,
+          txt: `<p class="uk-margin-remove-bottom">J'ai 10 ans d'expériences en CDI, et suis freelance depuis decembre 2018. Pour le moment je garde le cap!</p>`,
           go: `id15`
         },
         'id16b': {
@@ -1023,9 +1023,9 @@ export default {
           go: `id15`
         },
         'id16e': {
-          txt: `<!--<p>Je suis disponible en ce moment pour du 4 jours/semaine</p>-->
-                <p>Oups...Je ne suis pas disponible en ce moment...</p>
-                <!--<p class="uk-margin-remove-bottom">(Le mercredi, c'est le jour où je garde mes filles)</p>-->`,
+          txt: `<p>Je suis disponible en ce moment pour du 4 jours/semaine</p>
+                <!--<p>Oups...Je ne suis pas disponible en ce moment...</p>-->
+                <p class="uk-margin-remove-bottom">(Je garde mes filles les lundi après-midi et les mercredi matin)</p>`,
           go: `id15`
         },
         'id16f': {
@@ -1086,7 +1086,7 @@ export default {
         },
         'id17c': {
           txt: `<p>Désolé cher Thomas de 8 ans que j'étais, je n'utiliserai pas cette somme pour un voyage dans l'espace 👨‍🚀 ...</p>
-                <p class="uk-margin-remove-bottom">Ça nous permettra de ne pas négocier un prêt avec la banque pour l'achat de notre nouvel appartement</p>`,
+                <p class="uk-margin-remove-bottom">Ça nous permettra de ne pas d'investir dans notre projet d'eco-hameau</p>`,
           go: `id15`
         },
       }
