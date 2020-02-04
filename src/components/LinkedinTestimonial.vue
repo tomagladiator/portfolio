@@ -9,7 +9,41 @@
                         <div class="uk-card-header">
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                 <div class="uk-width-auto@m">
-                                    <img alt="Thomas Desfossez" src="img/testimonials/maxim-alexandre.jpg" class="uk-border-circle" width="120" height="120">
+                                    <img alt="Yuan Mao" src="img/testimonials/yuan-mao.jpg" class="uk-border-circle" width="120" height="120">
+                                </div>
+
+                                <div class="uk-width-expand@m">
+                                    <h2 class="uk-card-title uk-margin-remove-bottom">Yuan Mao</h2>
+                                    <p class="uk-margin-remove-top uk-margin-remove-bottom">Lead Technical Architect</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="uk-card-body">
+                            <p>
+                                Ouvert, intelligent et créatif, Thomas est un excellent développeur et collègue de travail.
+                            </p>
+
+                            <p>
+                                Il n'hésite pas à affronter les défis et à fournir les efforts nécessaires pour bien réussir ses projets.
+                            </p>
+
+                            <p>
+                                Thomas a une solide expérience de travail qui se reflète dans les résultats qu'il produit.
+                            </p>
+
+                            <p>
+                                Il est une ressource que je recommande volontiers, autant pour du travail indépendant que des projets en équipe.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-card uk-card-default">
+                        <div class="uk-card-header">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto@m">
+                                    <img alt="Maxim alexandre" src="img/testimonials/maxim-alexandre.jpg" class="uk-border-circle" width="120" height="120">
                                 </div>
 
                                 <div class="uk-width-expand@m">
@@ -43,7 +77,7 @@
                         <div class="uk-card-header">
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                 <div class="uk-width-auto@m">
-                                    <img alt="Thomas Desfossez" src="img/testimonials/gregory-delrue.jpg" class="uk-border-circle" width="120" height="120">
+                                    <img alt="Gregory Delrue" src="img/testimonials/gregory-delrue.jpg" class="uk-border-circle" width="120" height="120">
                                 </div>
 
                                 <div class="uk-width-expand@m">
@@ -69,7 +103,7 @@
                         <div class="uk-card-header">
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                 <div class="uk-width-auto@m">
-                                    <img alt="Thomas Desfossez" src="img/testimonials/ronald-golec.jpg" class="uk-border-circle" width="120" height="120">
+                                    <img alt="Ronald Golec" src="img/testimonials/ronald-golec.jpg" class="uk-border-circle" width="120" height="120">
                                 </div>
 
                                 <div class="uk-width-expand@m">
@@ -91,7 +125,7 @@
                         <div class="uk-card-header">
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                 <div class="uk-width-auto@m">
-                                    <img alt="Thomas Desfossez" src="img/testimonials/marjorie-lazaro.jpg" class="uk-border-circle" width="120" height="120">
+                                    <img alt="Marjorie Lazaro" src="img/testimonials/marjorie-lazaro.jpg" class="uk-border-circle" width="120" height="120">
                                 </div>
 
                                 <div class="uk-width-expand@m">
@@ -103,7 +137,19 @@
 
                         <div class="uk-card-body">
                             <p>
-                                Pendant les quelques semaines que j’ai travaillé avec Thomas, il m’a initié au travail de Lead Front-End. Avec patience, il relève les défis et travaille en collaboration avec l’équipe pour livrer dans les temps. A l’affut des nouvelles technologies il reste ouvert à l’expérimentation. Un mentor comme tout le monde aimerait en avoir.
+                                Pendant les quelques semaines que j’ai travaillé avec Thomas, il m’a initié au travail de Lead Front-End.
+                            </p>
+
+                            <p>
+                                Avec patience, il relève les défis et travaille en collaboration avec l’équipe pour livrer dans les temps.
+                            </p>
+
+                            <p>
+                                A l’affut des nouvelles technologies il reste ouvert à l’expérimentation.
+                            </p>
+
+                            <p>
+                                Un mentor comme tout le monde aimerait en avoir.
                             </p>
                         </div>
                     </div>

@@ -124,7 +124,7 @@
 
     <footer v-if="!isHidden" class="main-footer uk-grid-collapse uk-child-width-expand@s uk-text-center uk-background-primary" uk-grid>
       <div>
-        <div class="uk-padding-small uk-light">Thomas Desfossez &copy; 2019</div>
+        <div class="uk-padding-small uk-light">Thomas Desfossez &copy; 2020</div>
       </div>
     </footer>
   </div>
