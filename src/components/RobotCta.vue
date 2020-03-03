@@ -143,7 +143,7 @@
             </p>
 
             <p>
-              <vue-typer text='BIP BOOP ... HUMAIN ... VENEZ DISCUTER DE VOTRE MISSION AVEC MOI ...' :repeat='0' />
+              <vue-typer :text="t('bipBoop')" :repeat='0' />
             </p>
 
             <p>
@@ -172,6 +172,16 @@ export default {
   methods: {
     onErased () {
       this.bipBoop === 'BOOP' ? this.bipBoop = 'BIP' : this.bipBoop = 'BOOP'
+    }
+  },
+
+  locales: {
+    en: {
+      'bipBoop': `BIP BOOP ... HUMAN ... COME TO DISCUSS ABOUT YOUR MISSION WITH ME`
+    },
+
+    fr: {
+      'bipBoop': 'BIP BOOP ... HUMAIN ... VENEZ DISCUTER DE VOTRE MISSION AVEC MOI ...'
     }
   }
 }

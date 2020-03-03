@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <div class="uk-card-body">
+        <div class="uk-card-body" v-if="this.$translate.current === 'fr'">
             <p>
                 Entre le Canada et l'Europe, j'ai développé pendant 10 années une expérience professionnelle dans les domaines du développement web, de la gestion de projet Agile et de l'architecture front-end.
             </p>
@@ -49,25 +49,59 @@
             </blockquote>
         </div>
 
+        <div class="uk-card-body" v-if="this.$translate.current === 'en'">
+            <p>
+                Between Canada and Europe, I developed during 10 years a professional experience in the fields of web development, Agile project management and front-end architecture.
+            </p>
+
+            <p>
+                I remain on the lookout for new practices and technologies in the field of the web. <br>
+                I apply my knowledge in <strong>accessibility</strong>, in <strong>project management</strong>, in <strong>front-end development</strong> and in <strong>design</strong> on all my projects.
+            </p>
+
+            <hr class="uk-divider-icon">
+
+            <blockquote cite="#" class="uk-text-center">
+                <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
+
+                <p v-if="false" >
+                    Currently on a mission on project! <br>
+                    I promise, I'll keep you informed of my availability.
+                </p>
+
+                <p>
+                    Here I am available for a 4 days / week mission, Monday morning and Wednesday afternoon off (dad is watching the girls). <br>
+                    <router-link to="/remote" uk-tooltip="Why ?">Teleworking </router-link> with the possibility of traveling 1 day/week if necessary (near Lyon). <br>
+                    My daily rate from <router-link to="/negociator" uk-tooltip="Négocier mon TJM"><AnimatedNumber :number="400"></AnimatedNumber>€ HT</router-link>
+                </p>
+
+                <footer v-if="false">
+                    <cite>
+                        Let's take some time to chat over coffee / tea. <span style="font-style: normal;">☕</span>
+                    </cite>
+                </footer>
+            </blockquote>
+        </div>
+
         <div class="uk-card-footer">
-            <h3 class="uk-card-title">Compétences</h3>
+            <h3 class="uk-card-title">{{ t('Compétences') }}</h3>
 
             <div uk-grid>
 
             <p>
-                Tout est sur mon <a target="_blank" href="https://www.linkedin.com/in/tdesfossez" title="Linkedin">Linkedin</a>
+                {{ t('Tout est sur mon') }} <a target="_blank" href="https://www.linkedin.com/in/tdesfossez" title="Linkedin">Linkedin</a>
             </p>
 
             <p>
-                Voici mon résumé de <router-link to="/expertise">compétences !</router-link>
+                {{ t('Voici mon résumé de') }} <router-link to="/expertise">{{ t('compétences !') }}</router-link>
             </p>
 
             <p>
-                Jetez un oeil sur mes <router-link to="/realisations">réalisations !</router-link>
+                {{ t('Jetez un oeil sur mes') }} <router-link to="/realisations">{{ t('réalisations') }} !</router-link>
             </p>
 
             <p>
-                oldSchool? mon <a href="/thomas-desfossez-cv-2019-02.pdf" target="_blank">CV version 2019</a>
+                oldSchool? {{ t('mon') }} <a href="/thomas-desfossez-cv-2019-02.pdf" target="_blank">CV version 2019</a>
             </p>
 
             </div>
@@ -88,23 +122,27 @@ export default {
     AnimatedNumber
   },
 
-  methods: {
-    onErased () {
-      this.bipBoop === 'Developer' ? this.bipBoop = 'Mercenaire' : this.bipBoop = 'Developer'
-    }
-  },
-
-  mounted () {
-    // let fake3d = document.createElement('script')
-    // fake3d.setAttribute('src', './js/app.js')
-    // fake3d.setAttribute('data-id', 'toto')
-    // fake3d.setAttribute('type', 'module')
-    // document.head.appendChild(fake3d)
-  },
-
   data () {
     return {
       bipBoop: 'Developer'
+    }
+  },
+
+  methods: {
+    onErased () {
+      this.bipBoop === 'Developer' ? this.bipBoop = 'Mercenary' : this.bipBoop = 'Developer'
+    }
+  },
+
+  locales: {
+    en: {
+      'Jetez un oeil sur mes': 'Have a peek on my',
+      'réalisations': 'realisations',
+      'mon': 'my',
+      'Compétences': 'skills',
+      'Tout est sur mon': 'Everything is on my',
+      'Voici mon résumé de': 'Here is my skills',
+      'compétences !': 'summary !'
     }
   }
 }

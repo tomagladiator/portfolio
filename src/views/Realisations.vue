@@ -18,6 +18,32 @@
 
         <div class="uk-child-width-1-2@m uk-child-width-1-3@xl uk-grid-match js-filter" uk-grid="parallax: 450">
           <MyRealisation
+            year        ="2020"
+            agency      ="CISS"
+            titleJob    ="Senior Front-end Web Developer"
+            project     ="Confidentiel"
+            descClient  ="Créée en 2001, la société Ciss est une société de services informatiques, spécialisée dans l’informatique décisionnelle et la valorisation des données."
+            descProject ="Evolution du dashboard à destination des buralistes pour gestion de leur inventaire."
+            hashtag     ="#Sass #HTML5 #VueJs #JavaScript #API"
+            logoUrl     ="../img/realisations/logo-ciss.png"
+            imgUrl      ="../img/realisations/ciss.jpg"
+            dataTech    ="env_JS"
+          />
+
+          <MyRealisation
+            year        ="2019"
+            agency      ="Neuralytics"
+            titleJob    ="Senior Front-end Web Developer"
+            project     ="Interne"
+            descClient  ="Technologies de deep learning pour analyser et prédire les comportements d’achat."
+            descProject ="Projet interne pour une Start Up Lyonnaise - Création d'un chatbot publique et évolution d'un dashboard à destination des commerciaux du domaine automobile"
+            hashtag     ="#Responsive #Sass #HTML5 #VueJs #JavaScript #chatbot #API"
+            logoUrl     ="../img/realisations/logo-neuralytics.png"
+            imgUrl      ="../img/realisations/neuralytics.jpg"
+            dataTech    ="env_JS"
+          />
+
+          <MyRealisation
             year        ="2019"
             agency      ="Exoskills"
             titleJob    ="Senior Front-end Web Developer"
@@ -28,7 +54,7 @@
             logoUrl     ="../img/realisations/logo-exoskills.png"
             imgUrl      ="../img/realisations/exoskills.jpg"
             dataTech    ="env_JS"
-            />
+          />
 
           <MyRealisation
             year        ="2018"
@@ -41,7 +67,7 @@
             logoUrl     ="../img/realisations/logo-ftq.png"
             imgUrl      ="../img/realisations/ftq.jpg"
             dataTech    ="env_Net"
-            />
+          />
 
           <MyRealisation
             year        ="2017"
@@ -54,7 +80,7 @@
             logoUrl     ="../img/realisations/logo-wsp.png"
             imgUrl      ="../img/realisations/wsp.jpg"
             dataTech    ="env_Net"
-            />
+          />
 
           <MyRealisation
             year        ="2016"
@@ -67,7 +93,7 @@
             logoUrl     ="../img/realisations/logo-dyscatalog.png"
             imgUrl      ="../img/realisations/dyscatalog.jpg"
             dataTech    ="env_JS"
-            />
+          />
 
           <MyRealisation
             year        ="2016"
@@ -80,7 +106,7 @@
             logoUrl     ="../img/realisations/logo-metro.png"
             imgUrl      ="../img/realisations/metro-epicerie.jpg"
             dataTech    ="env_PHP"
-            />
+          />
 
           <MyRealisation
             year        ="2015"
@@ -93,7 +119,7 @@
             logoUrl     ="../img/realisations/logo-desjardins.png"
             imgUrl      ="../img/realisations/desjardins-disnat.jpg"
             dataTech    ="env_NET"
-            />
+          />
 
           <MyRealisation
             year        ="2015"
@@ -106,7 +132,7 @@
             logoUrl     ="../img/realisations/logo-tink.png"
             imgUrl      ="../img/realisations/tink.jpg"
             dataTech    ="env_PHP"
-            />
+          />
 
           <MyRealisation
             year        ="2015"
@@ -119,7 +145,7 @@
             logoUrl     ="../img/realisations/logo-desjardins.png"
             imgUrl      ="../img/realisations/desjardins-assurances-generales.jpg"
             dataTech    ="env_JAVA"
-            />
+          />
 
           <MyRealisation
             year        ="2015"
@@ -132,7 +158,7 @@
             logoUrl     ="../img/realisations/logo-desjardins.png"
             imgUrl      ="../img/realisations/desjardins-investisseur-en-ligne.jpg"
             dataTech    ="env_JS"
-            />
+          />
 
           <MyRealisation
             year        ="2014"
@@ -145,7 +171,7 @@
             logoUrl     ="../img/realisations/logo-desjardins.png"
             imgUrl      ="../img/realisations/desjardins-monetico.jpg"
             dataTech    ="env_JS"
-            />
+          />
 
           <MyRealisation
             year        ="2014"
@@ -158,7 +184,7 @@
             logoUrl     ="../img/realisations/logo-st-hubert.png"
             imgUrl      ="../img/realisations/st-hubert-poule-position.jpg"
             dataTech    ="env_JS"
-            />
+          />
 
           <MyRealisation
             year        ="2014"
@@ -171,7 +197,7 @@
             logoUrl     ="../img/realisations/logo-amt.png"
             imgUrl      ="../img/realisations/amt.jpg"
             dataTech    ="env_NET"
-            />
+          />
 
           <MyRealisation
             year        ="2014"
@@ -184,7 +210,7 @@
             logoUrl     ="../img/realisations/logo-metro.png"
             imgUrl      ="../img/realisations/metro-inc.jpg"
             dataTech    ="env_PHP"
-            />
+          />
 
           <MyRealisation
             year        ="2013"
@@ -197,7 +223,7 @@
             logoUrl     ="../img/realisations/logo-la-plagne.png"
             imgUrl      ="../img/realisations/la-plagne.jpg"
             dataTech    =""
-            />
+          />
 
           <MyRealisation
             year        ="2013"
@@ -210,7 +236,7 @@
             logoUrl     ="../img/realisations/logo-mavic.png"
             imgUrl      ="../img/realisations/mavic.jpg"
             dataTech    =""
-            />
+          />
 
           <MyRealisation
             year        ="2013"
@@ -223,7 +249,7 @@
             logoUrl     ="../img/realisations/logo-somfy.png"
             imgUrl      ="../img/realisations/somfy.jpg"
             dataTech    ="env_PHP"
-            />
+          />
         </div>
       </div>
     </div>

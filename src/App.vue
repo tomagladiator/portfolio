@@ -71,7 +71,7 @@
             <ul class="uk-navbar-nav" id="nav">
               <li class="uk-margin-left">
                 <router-link to="/realisations">
-                  <span class="uk-icon uk-margin-small-right" uk-icon="icon: check"></span> Mes réalisations
+                  <span class="uk-icon uk-margin-small-right" uk-icon="icon: check"></span> {{ t('Mes réalisations') }}
                 </router-link>
               </li>
 
@@ -83,13 +83,13 @@
 
               <li class="uk-margin-left">
                 <router-link to="/chatbot">
-                  <span class="uk-icon uk-margin-small-right" uk-icon="icon: comments"></span> Une mission&nbsp;?
+                  <span class="uk-icon uk-margin-small-right" uk-icon="icon: comments"></span> {{ t('Une mission ?') }}
                 </router-link>
               </li>
 
               <li class="uk-margin-left">
                 <router-link to="/contact">
-                  <span class="uk-icon uk-margin-small-right" uk-icon="icon: mail"></span> Contact
+                  <span class="uk-icon uk-margin-small-right" uk-icon="icon: mail"></span> {{ t('Contact') }}
                 </router-link>
               </li>
 
@@ -106,8 +106,14 @@
               </li>
 
               <li>
-                <a href="#" v-on:click="darkLight" >
+                <a href="#" @click="darkLight" >
                   <span uk-tooltip="Theme Dark/Light" class="uk-margin-small-right uk-icon-button" uk-icon="icon: paint-bucket"></span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" @click="toggleLang" :title="t('ChangeLanguageTo')" >
+                  {{ t('En') }}
                 </a>
               </li>
             </ul>
@@ -134,20 +140,25 @@
 import UIkit from 'uikit'
 import Icons from 'uikit/dist/js/uikit-icons'
 import { EventBus } from './event-bus.js'
+
 UIkit.use(Icons)
 
 export default {
   name: 'App',
+
   metaInfo: {
     title: 'Thomas Desfossez - Freelance - Lead Front-End Senior sur Lyon',
     titleTemplate: '%s | Thomas Desfossez'
   },
+
   data () {
     return {
       isHidden: false,
-      modeDarkLight: 'light'
+      modeDarkLight: 'light',
+      lang: 'fr'
     }
   },
+
   computed: {
     modeClassIs () {
       if (this.modeDarkLight === 'dark') {
@@ -157,7 +168,20 @@ export default {
       }
     }
   },
+
   methods: {
+    toggleLang () {
+      if (this.lang === 'fr') {
+        this.$translate.setLang('en')
+
+        this.lang = 'en'
+      } else {
+        this.$translate.setLang('fr')
+
+        this.lang = 'fr'
+      }
+    },
+
     triggerClose () {
       this.$refs.closeButton.click()
     },
@@ -170,12 +194,28 @@ export default {
   },
 
   mounted () {
+    this.$translate.setLang('fr')
+
     EventBus.$on('hideLayout', customMessage => {
       this.isHidden = customMessage
     })
 
     if (this.$cookie.get('mode') === 'dark') {
       this.modeDarkLight = 'dark'
+    }
+  },
+
+  locales: {
+    en: {
+      'Mes réalisations': 'My realisations',
+      'Une mission ?': 'An assignment ?',
+      'Contact': 'Contact',
+      'ChangeLanguageTo': 'Changer la langue en français',
+      'En': 'Fr'
+    },
+
+    fr: {
+      'ChangeLanguageTo': 'Change language to english'
     }
   }
 }
@@ -224,5 +264,4 @@ export default {
     color: #f1f1f1 !important;
   }
 }
-
 </style>
