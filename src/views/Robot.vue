@@ -1023,9 +1023,9 @@ export default {
           go: `id15`
         },
         'id16e': {
-          txt: `<p>Je suis disponible en ce moment pour du 4 jours/semaine</p>
-                <!--<p>Oups...Je ne suis pas disponible en ce moment...</p>-->
-                <p class="uk-margin-remove-bottom">(Je garde mes filles les lundi après-midi et les mercredi matin)</p>`,
+          txt: `<!--<p>Je suis disponible en ce moment pour du 4 jours/semaine</p>-->
+                <p>Oups...Je ne suis pas disponible en ce moment...</p>
+                <!--<p class="uk-margin-remove-bottom">(Je garde mes filles les lundi après-midi et les mercredi matin)</p>-->`,
           go: `id15`
         },
         'id16f': {

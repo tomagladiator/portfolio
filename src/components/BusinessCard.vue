@@ -30,18 +30,18 @@
             <blockquote cite="#" class="uk-text-center">
                 <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
 
-                <p v-if="false" >
+                <p v-if="!availability" >
                     Actuellement en mission sur un projet de feu ! <br>
-                    Promis, je vous tiendrai informés de mes disponibilités.
+                    Promis, je vous tiendrai informé de mes disponibilités.
                 </p>
 
-                <p>
+                <p v-if="availability">
                     Me voilà disponible pour une mission de 4 jours / semaine, lundi matin et mercredi après-midi off (papa garde les filles). <br>
                     En <router-link to="/remote" uk-tooltip="Pourquoi le télétravail">télétravail</router-link> avec possibilité si besoin de déplacement 1 jour/semaine ( Proche de Lyon ). <br>
                     Mon taux journalier à partir de <router-link to="/negociator" uk-tooltip="Négocier mon TJM"><AnimatedNumber :number="400"></AnimatedNumber>€ HT</router-link>
                 </p>
 
-                <footer v-if="false">
+                <footer v-if="availability">
                     <cite>
                         Prenons le temps d’échanger autour d’un café/thé. <span style="font-style: normal;">☕</span>
                     </cite>
@@ -64,18 +64,18 @@
             <blockquote cite="#" class="uk-text-center">
                 <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
 
-                <p v-if="false" >
+                <p v-if="!availability" >
                     Currently on a mission on project! <br>
                     I promise, I'll keep you informed of my availability.
                 </p>
 
-                <p>
+                <p v-if="availability">
                     Here I am available for a 4 days / week mission, Monday morning and Wednesday afternoon off (dad is watching the girls). <br>
                     <router-link to="/remote" uk-tooltip="Why ?">Teleworking </router-link> with the possibility of traveling 1 day/week if necessary (near Lyon). <br>
                     My daily rate from <router-link to="/negociator" uk-tooltip="Négocier mon TJM"><AnimatedNumber :number="400"></AnimatedNumber>€ HT</router-link>
                 </p>
 
-                <footer v-if="false">
+                <footer v-if="availability">
                     <cite>
                         Let's take some time to chat over coffee / tea. <span style="font-style: normal;">☕</span>
                     </cite>
@@ -124,7 +124,8 @@ export default {
 
   data () {
     return {
-      bipBoop: 'Developer'
+      bipBoop: 'Developer',
+      availability: false
     }
   },
 
