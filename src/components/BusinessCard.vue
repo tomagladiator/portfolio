@@ -36,9 +36,9 @@
                 </p>
 
                 <p v-if="availability">
-                    Me voilà disponible pour une mission de 4 jours / semaine, lundi matin et mercredi après-midi off (papa garde les filles). <br>
-                    En <router-link to="/remote" uk-tooltip="Pourquoi le télétravail">télétravail</router-link> avec possibilité si besoin de déplacement 1 jour/semaine ( Proche de Lyon ). <br>
-                    Mon taux journalier à partir de <router-link to="/negociator" uk-tooltip="Négocier mon TJM"><AnimatedNumber :number="400"></AnimatedNumber>€ HT</router-link>
+                    Me voilà disponible de 4 jours / semaine, lundi matin et mercredi après-midi off (papa garde les filles). <br>
+                    En <router-link to="/remote" uk-tooltip="Pourquoi le télétravail">télétravail</router-link> avec possibilité si besoin de déplacement ( Proche de Lyon ).
+          
                 </p>
 
                 <footer v-if="availability">
@@ -125,7 +125,7 @@ export default {
   data () {
     return {
       bipBoop: 'Developer',
-      availability: false
+      availability: true
     }
   },
 
