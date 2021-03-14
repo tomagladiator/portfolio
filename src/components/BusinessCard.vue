@@ -38,7 +38,6 @@
                 <p v-if="availability">
                     Me voilà disponible de 4 jours / semaine, lundi matin et mercredi après-midi off (papa garde les filles). <br>
                     En <router-link to="/remote" uk-tooltip="Pourquoi le télétravail">télétravail</router-link> avec possibilité si besoin de déplacement ( Proche de Lyon ).
-          
                 </p>
 
                 <footer v-if="availability">
@@ -65,7 +64,7 @@
                 <span class="uk-icon uk-margin-small-right uk-icon-button" uk-icon="icon: quote-right; ratio: 2" style="transform: rotate(180deg)"></span>
 
                 <p v-if="!availability" >
-                    Currently on a mission on project! <br>
+                    Currently not available for a new mission! <br>
                     I promise, I'll keep you informed of my availability.
                 </p>
 
@@ -100,7 +99,7 @@
                 {{ t('Jetez un oeil sur mes') }} <router-link to="/realisations">{{ t('réalisations') }} !</router-link>
             </p>
 
-            <p>
+            <p v-if="availability">
                 oldSchool? {{ t('mon') }} <a href="/thomas-desfossez-cv-2019-02.pdf" target="_blank">CV version 2019</a>
             </p>
 
@@ -125,7 +124,7 @@ export default {
   data () {
     return {
       bipBoop: 'Developer',
-      availability: true
+      availability: false
     }
   },
 
